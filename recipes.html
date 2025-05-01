@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Images/Icon" type="image/jpeg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faithful Journal - Recipes</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
+        <h1>Faithful Journal</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="music.html">Music Sheets</a></li>
                 <li><a href="recipes.html" class="active">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
- <section class="recipe-list-section">
+        <section class="recipe-grid-section">
             <h2>Our Delicious Recipes</h2>
-            <div class="recipe-grid">
-                <article class="recipe-preview">
+            <div class="recipe-grid-container">
+                <article class="recipe-card">
                     <a href="chicken-gyro.html">
-                        <img src="images/chicken-gyro-thumbnail.jpg" alt="Chicken Gyro">
-                        <h3>Chicken Gyro</h3>
-                        <p class="recipe-excerpt">
-                            Savory spiced chicken, thinly sliced and wrapped in pita bread.
-                        </p>
+                        <div class="recipe-image-wrapper">
+                            <img src="images/chicken-gyro-thumbnail.jpg" alt="Chicken Gyro">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Chicken Gyro</h3>
+                            <p class="recipe-excerpt">Savory spiced chicken in pita.</p>
+                        </div>
                     </a>
                 </article>
-                <article class="recipe-preview">
-                    <a href="hyderabadi-biryani.html">
-                        <img src="images/biryani-thumbnail.jpg" alt="Hyderabadi Chicken Dum Biryani">
-                        <h3>Hyderabadi Chicken Dum Biryani</h3>
-                        <p class="recipe-excerpt">
-                            Aromatic rice layered with marinated chicken and fried onions, slow-cooked.
-                        </p>
-                    </a>
-                </article>
-                <article class="recipe-preview">
-                    <a href="baklava.html">
-                        <img src="images/baklava-thumbnail.jpg" alt="Pistachio Baklava">
-                        <h3>Pistachio Baklava</h3>
-                        <p class="recipe-excerpt">
-                            Layers of delicate phyllo dough filled with pistachios and sweet syrup.
-                        </p>
-                    </a>
-                </article>
-                <article class="recipe-preview">
-                    <a href="butter-chicken.html">
-                        <img src="images/butter-chicken-thumbnail.jpg" alt="Butter Chicken">
-                        <h3>Butter Chicken</h3>
-                        <p class="recipe-excerpt">
-                           Tender tandoori chicken in a rich, creamy, and buttery tomato gravy.
-                        </p>
-                    </a>
-                </article>
-            </div>
-        </section>
-        </main>
-    <footer>
-        <p>&copy; 2025 My Website</p>
-    </footer>
 
+                <article class="recipe-card">
+                    <a href="hyderabadi-biryani.html">
+                        <div class="recipe-image-wrapper">
+                            <img src="images/biryani-thumbnail.jpg" alt="Hyderabadi Chicken Dum Biryani">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Hyderabadi Biryani</h3>
+                            <p class="recipe-excerpt">Aromatic rice with marinated chicken.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="baklava.html">
+                        <div class="recipe-image-wrapper">
+                            <img src="images/baklava-thumbnail.jpg" alt="Pistachio Baklava">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Pistachio Baklava</h3>
+                            <p class="recipe-excerpt">Phyllo dough with pistachios and syrup.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="butter-chicken.html">
+                        <div class="recipe-image-wrapper">
+                            <img src="images/butter-chicken-thumbnail.jpg" alt="Butter Chicken">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Butter Chicken</h3>
+                            <p class="recipe-excerpt">Tender chicken in creamy tomato gravy.</p>
+                        </div>
+                    </a>
+                </article>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Faithful Journal. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
