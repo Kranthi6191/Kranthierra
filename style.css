@@ -77,64 +77,85 @@ footer {
     width: 100%;
     margin-top: 20px;
 }
-
-/* Recipe Styles */
-.recipe-list-section {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-left: 5px solid #014421;
-    background-color: #f0f8ff; /* Light blue background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.recipe-list-section:hover {
-    transform: translateY(-5px);
-}
-
-.recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.recipe-preview {
-    background-color: #fff; /* White background for previews */
-    padding: 1rem;
+/* Recipe Grid Section */
+.recipe-grid-section {
+    padding: 20px;
+    background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 
-.recipe-preview:hover {
-    background-color: #f8f0e8; /* Light beige on hover */
+.recipe-grid-section h2 {
+    color: #556B2F; /* Hunter Green */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.recipe-preview a {
+.recipe-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card a {
     text-decoration: none;
-    color: #333; /* Dark text for preview links */
+    color: inherit;
     display: block;
+    height: 100%;
 }
 
-.recipe-preview img {
+/* Recipe Image Wrapper */
+.recipe-image-wrapper {
     width: 100%;
     height: 200px;
+    overflow: hidden;
+}
+
+.recipe-image-wrapper img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-.recipe-preview h3 {
-    margin: 0.5rem 0;
-    color: #556B2F; /* Hunter Green for preview titles */
+.recipe-card:hover .recipe-image-wrapper img {
+    transform: scale(1.1);
 }
 
-.recipe-excerpt {
-    color: #666; /* Slightly lighter text for excerpts */
+/* Recipe Card Content */
+.recipe-card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.recipe-card-content h3 {
+    color: #556B2F; /* Hunter Green */
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.recipe-card-content .recipe-excerpt {
+    color: #666;
     font-size: 0.9em;
+    margin-bottom: 0;
 }
 
-/* Individual Recipe Styles */
+/* Individual Recipe Styles (No significant changes needed for layout here) */
 .recipe-detail {
     padding: 2rem;
     background-color: #fff;
@@ -146,12 +167,14 @@ footer {
 .recipe-detail h2 {
     color: #556B2F; /* Hunter Green for detail title */
     margin-bottom: 0.5rem;
+    text-align: center; /* Center the title on the detail page */
 }
 
 .recipe-meta {
     color: #777; /* Lighter text for meta */
     margin-bottom: 1rem;
     font-size: 0.85em;
+    text-align: center; /* Center the meta info */
 }
 
 .recipe-meta span {
@@ -199,4 +222,5 @@ footer {
     font-style: italic;
     color: #777; /* Lighter text for notes */
     font-size: 0.9em;
+    text-align: center; /* Center the notes */
 }
