@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kranthi Erra - Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Images/Icon" type="image/jpeg">
-</head>
+    <link rel="icon" href="images/favicon.png" type="image/png"> </head>
 <body>
     <header>
-        <nav>
+        <h1><a href="index.html">Kranthi Erra</a></h1> <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
@@ -20,42 +19,51 @@
             </ul>
         </nav>
     </header>
-<main>
-    <section class="hero">
-        <h1>Welcome to Kranthi's personal blog</h1>
-        <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
-        <a href="/about.html" class="button">Learn More About Me</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Kranthi's personal blog</h1>
+            <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
+            <a href="about.html" class="button">Learn More About Me</a> </section>
 
-    <section class="featured-posts">
-        <h2>Latest Faith & Theology Posts</h2>
-        <div class="post-grid">
-            </div>
-        <a href="/blogs.html" class="button">Read All Blog Posts</a>
-    </section>
+        <section class="featured-posts">
+            <h2>Latest Faith & Theology Posts</h2>
+            <div class="post-grid">
+                </div>
+            <a href="blogs.html" class="button">Read All Blog Posts</a> </section>
 
-    <section class="featured-music">
-        <h2>Featured Music Sheet</h2>
-        <a href="/music.html" class="button">Explore Music Sheets</a>
-    </section>
+        <section class="featured-music">
+            <div class="featured-content">
+                <h2>Featured Music Sheet</h2>
+                <p>Highlight a specific music sheet here with a brief description.</p>
+                <a href="music.html" class="button">Explore Music Sheets</a> </div>
+            <div class="featured-image">
+                </div>
+        </section>
 
-    <section class="featured-recipe">
-        <h2>Today's Featured Recipe</h2>
-        <a href="/recipes.html" class="button">Discover More Recipes</a>
-    </section>
+        <section class="featured-recipe">
+             <div class="featured-image">
+                </div>
+            <div class="featured-content">
+                <h2>Today's Featured Recipe</h2>
+                <p>Showcase a delicious recipe with a tantalizing description.</p>
+                <a href="recipes.html" class="button">Discover More Recipes</a> </div>
+        </section>
 
-    <section class="subscribe">
-        <h2>Stay Updated!</h2>
-        <p>Subscribe to get the latest posts, music, and recipes delivered to your inbox.</p>
+        <section class="subscribe">
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to get the latest posts, music, and recipes delivered to your inbox.</p>
+            <form> <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                <button type="submit" class="button">Subscribe</button>
+            </form>
         </section>
     
-     <p>There is therefore now no condemnation for those who are in Christ Jesus.</p>
-        <p>Romans 8:1</p>
-</main>
+        <section class="quote-section"> <p>There is therefore now no condemnation for those who are in Christ Jesus.</p>
+             <p>Romans 8:1</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 My Website</p>
-    </footer>
+        <p>&copy; <span id="currentYear">2025</span> Kranthi Erra. All rights reserved.</p> </footer>
 
     <script src="script.js"></script>
 </body>
