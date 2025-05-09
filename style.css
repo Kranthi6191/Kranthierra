@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f3f3f3;
     color: #222;
-    animation: fadeIn 1.5s ease-in;
+    /* Removed body fadeIn animation, handled by JS for main content */
 }
 
 header {
@@ -24,116 +24,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2em; /* Or adjust as needed */
     letter-spacing: 1px;
 }
 
-/* ==========================================================================
-   Recipe Page Styles
-   ========================================================================== */
-
-/* Recipe List Section */
-.recipe-list-section {
-    padding: 2rem;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-.recipe-list-section h2 {
-    font-size: 2.5rem;
-    color: #014421;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-/* Recipe Grid Container */
-.recipe-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-}
-
-/* Recipe Card */
-.recipe-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.recipe-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Recipe Image Wrapper */
-.recipe-image-wrapper {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.recipe-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.recipe-card:hover .recipe-image-wrapper img {
-    transform: scale(1.1);
-}
-
-/* Recipe Card Content */
-.recipe-card-content {
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.recipe-card-content h3 {
-    font-size: 1.5rem;
-    color: #014421;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-}
-
-.recipe-card-content p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.4;
-}
-
-/* Recipe Excerpt */
-.recipe-excerpt {
-    font-size: 0.9em;
-}
-
-/* Recipe Card Link */
-.recipe-card a {
-    display: block;
+header h1 a {
+    color: white;
     text-decoration: none;
-    color: inherit;
-    height: 100%;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-    .recipe-list-section h2 {
-        font-size: 2rem;
-    }
-
-    .recipe-card-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .recipe-card-content p {
-        font-size: 1rem;
-    }
 }
 
 nav ul {
@@ -153,15 +50,24 @@ nav a {
     border-radius: 5px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     color: #8B0000; /* Dark red */
     transform: translateY(-2px);
+    outline: 2px solid #8B0000; /* Focus outline */
+    outline-offset: 2px;
 }
 
 main {
     padding: 2rem;
     max-width: 1200px;
     margin: 2rem auto;
+    opacity: 0; /* Initial state for JS fade-in */
+    transition: opacity 0.5s ease-in-out; /* Transition for JS fade-in */
+}
+
+main.loaded {
+    opacity: 1; /* Final state for JS fade-in */
 }
 
 section {
@@ -178,7 +84,7 @@ section:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-h1,
+h1, /* General h1 if not in header */
 h2,
 h3 {
     color: #014421;
@@ -186,14 +92,17 @@ h3 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-a {
+a { /* General link color if not in nav or specific components */
     color: #8B0000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a:hover {
+a:hover,
+a:focus { /* Added focus for general links */
     color: #000;
+    outline: 1px dashed #000; /* Example focus for general links */
+    outline-offset: 1px;
 }
 
 footer {
@@ -205,38 +114,33 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 .button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #014421;
-    color: white;
+    color: white !important; /* Ensure white text over background */
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Ensure no underline from general 'a' styles */
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #013017;
     transform: scale(1.05);
+    color: white !important;
+    outline: 2px solid #013017; /* Focus outline */
+    outline-offset: 2px;
 }
 
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-image.jpg');
-    /* Replace with your image */
+    /* Ensure 'images/hero-image.jpg' exists */
     background-size: cover;
     background-position: center;
     color: white;
@@ -247,11 +151,12 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hero h1 {
+.hero h1 { /* Hero specific h1 */
     font-size: 3.5em;
     margin-bottom: 1rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: white; /* Ensure hero h1 is white */
 }
 
 .hero p {
@@ -368,7 +273,7 @@ footer {
 .subscribe {
     text-align: center;
     padding: 3rem 2rem;
-    background-color: #f0f8ff;
+    background-color: #f0f8ff; /* Alice blue - gentle background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
@@ -389,6 +294,7 @@ footer {
 .subscribe form {
     display: flex;
     justify-content: center;
+    align-items: center; /* Align items for better appearance if button is taller */
     gap: 1rem;
     max-width: 500px;
     margin: 0 auto;
@@ -398,20 +304,199 @@ footer {
     padding: 0.75rem 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+    flex-grow: 1; /* Allow email input to take available space */
+    min-width: 200px; /* Prevent it from becoming too small */
 }
+
+/* Quote Section on Homepage */
+.quote-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-style: italic;
+    color: #444;
+}
+.quote-section p {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ==========================================================================
+   Recipe Page Specific Styles (recipes.html & chicken-gyro.html)
+   ========================================================================== */
+
+/* Recipe List Section (recipes.html) */
+.recipe-list-section {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.recipe-list-section h2 {
+    font-size: 2.5rem;
+    color: #014421;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Recipe Grid Container (recipes.html) */
+.recipe-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Recipe Card (recipes.html) */
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Added for consistent card height if content varies */
+    flex-direction: column; /* Stack content vertically */
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card a { /* Make the whole card clickable */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    height: 100%; /* Make link fill the card */
+}
+
+.recipe-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.recipe-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .recipe-image-wrapper img {
+    transform: scale(1.1);
+}
+
+.recipe-card-content {
+    padding: 1.5rem;
+    text-align: center;
+    flex-grow: 1; /* Allows content to expand, pushing excerpt down if needed */
+}
+
+.recipe-card-content h3 {
+    font-size: 1.5rem;
+    color: #014421;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.recipe-card-content p.recipe-excerpt { /* Made selector more specific */
+    font-size: 0.9em; /* Excerpt text */
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Recipe Detail Page (chicken-gyro.html) */
+.recipe-detail { /* Class for the main content of a single recipe page */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.recipe-detail h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.recipe-meta span {
+    margin: 0 0.5rem;
+}
+
+.recipe-detail .image-container {
+    width: 100%;
+    max-width: 600px; /* Limit image width for better layout */
+    margin: 0 auto 2rem auto; /* Center image */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recipe-detail .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recipe-ingredients, .recipe-instructions {
+    margin-bottom: 2rem;
+}
+
+.recipe-ingredients h3, .recipe-instructions h3 {
+    font-size: 1.8em;
+    color: #014421;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #014421;
+}
+
+.recipe-ingredients ul, .recipe-instructions ol {
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.recipe-ingredients ul li, .recipe-instructions ol li {
+    margin-bottom: 0.75rem;
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        text-align: center; /* Center title if it wraps */
     }
-
+    header h1 {
+        margin-bottom: 0.5rem; /* Space between title and nav if stacked */
+    }
     nav ul {
         margin-top: 1rem;
         justify-content: center;
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        gap: 0.5rem; /* Reduce gap for smaller screens */
+    }
+    nav a {
+        padding: 0.5rem 0.75rem; /* Slightly smaller padding */
+    }
+
+    main {
+        padding: 1rem;
+        margin: 1rem auto;
     }
 
     .hero {
@@ -429,13 +514,66 @@ footer {
     }
 
     .featured-image {
-        max-width: 80%;
-        margin-bottom: 1rem;
+        max-width: 80%; /* Allow image to be larger relative to content */
+        margin: 0 auto 1rem auto; /* Center image */
     }
 
     .subscribe form {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch; /* Make input and button full width of form */
         gap: 1rem;
     }
+    .subscribe input[type="email"] {
+        width: auto; /* Let flexbox handle it, remove fixed width */
+    }
+
+    .recipe-list-section h2 {
+        font-size: 2rem;
+    }
+    .recipe-detail h2 {
+        font-size: 2em;
+    }
+    .recipe-ingredients h3, .recipe-instructions h3 {
+        font-size: 1.5em;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+
+    .post-card-content h3 {
+        font-size: 1.2em;
+    }
+    .post-card-content p {
+        font-size: 0.9em;
+    }
+    
+    .featured-content h2 {
+        font-size: 1.8em;
+    }
+
+    .subscribe h2 {
+        font-size: 2em;
+    }
+
+    .recipe-card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .recipe-card-content p.recipe-excerpt {
+        font-size: 1rem;
+    }
+}
+/* Removed the extra closing brace that was here */
