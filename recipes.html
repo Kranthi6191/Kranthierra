@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kranthi Erra - Recipes</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/Icon" type="image/jpeg">
-</head>
+    <link rel="icon" href="images/favicon.png" type="image/png"> </head>
 
 <body>
     <header>
-        <h1>Faithful Journal</h1>
-        <nav>
+        <h1><a href="index.html">Kranthi Erra</a></h1> <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
@@ -39,8 +38,7 @@
                 </article>
 
                 <article class="recipe-card">
-                    <a href="hyderabadi-biryani.html">
-                        <div class="recipe-image-wrapper">
+                    <a href="hyderabadi-biryani.html"> <div class="recipe-image-wrapper">
                             <img src="images/biryani-thumbnail.jpg" alt="Hyderabadi Chicken Dum Biryani">
                         </div>
                         <div class="recipe-card-content">
@@ -51,8 +49,7 @@
                 </article>
 
                 <article class="recipe-card">
-                    <a href="baklava.html">
-                        <div class="recipe-image-wrapper">
+                    <a href="baklava.html"> <div class="recipe-image-wrapper">
                             <img src="images/baklava-thumbnail.jpg" alt="Pistachio Baklava">
                         </div>
                         <div class="recipe-card-content">
@@ -63,8 +60,7 @@
                 </article>
 
                 <article class="recipe-card">
-                    <a href="butter-chicken.html">
-                        <div class="recipe-image-wrapper">
+                    <a href="butter-chicken.html"> <div class="recipe-image-wrapper">
                             <img src="images/butter-chicken-thumbnail.jpg" alt="Butter Chicken">
                         </div>
                         <div class="recipe-card-content">
@@ -73,12 +69,11 @@
                         </div>
                     </a>
                 </article>
-            </div>
+                </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Kranthi Erra. All rights reserved.</p>
-    </footer>
+        <p>&copy; <span id="currentYear">2025</span> Kranthi Erra. All rights reserved.</p> </footer>
     <script src="script.js"></script>
 </body>
 
