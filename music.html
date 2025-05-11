@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kranthi Erra - Music Sheets</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.png" type="image/png"> </head>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
 <body>
     <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1> <nav>
+        <h1><a href="index.html">Kranthi Erra</a></h1>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
@@ -21,15 +23,36 @@
     </header>
 
     <main>
-        <section>
-            <h2>Explore Our Music Collection</h2>
-            <p>Find and download your favorite music sheets. More coming soon!</p>
-            </section>
+        <section class="recipe-list-section"> <h2>Our Music Sheets Collection</h2>
+            <div class="recipe-grid-container"> <article class="recipe-card"> <a href="link-to-music-sheet-detail-or-pdf.html"> <div class="recipe-image-wrapper">
+                            <img src="images/music-sheet-thumbnail-1.jpg" alt="Music Sheet Title 1 Thumbnail">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Music Sheet Title 1</h3>
+                            <p class="recipe-excerpt">Brief description: e.g., Composer, Key, Difficulty, or a short blurb.</p>
+                            </div>
+                    </a>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="link-to-music-sheet-detail-or-pdf-2.html">
+                        <div class="recipe-image-wrapper">
+                            <img src="images/music-sheet-thumbnail-2.jpg" alt="Music Sheet Title 2 Thumbnail">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Music Sheet Title 2</h3>
+                            <p class="recipe-excerpt">Another piece of music, perhaps for a different instrument.</p>
+                        </div>
+                    </a>
+                </article>
+
+                </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear">2025</span> Kranthi Erra. All rights reserved.</p> </footer>
-
+        <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
