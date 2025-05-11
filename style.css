@@ -474,7 +474,72 @@ footer {
     margin-bottom: 0.75rem;
 }
 
+/* ==========================================================================
+   Music Chords Page Styles
+   ========================================================================== */
 
+.song-content-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+.song-meta {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    color: #555;
+}
+.song-meta p {
+    margin: 0.3rem 0;
+}
+.lyrics-section {
+    font-family: 'Courier New', Courier, monospace; /* Monospace for better chord alignment */
+    line-height: 1.8;
+    font-size: 1.1em; /* You can adjust this base size for lyrics */
+}
+.verse, .chorus {
+    margin-bottom: 1.5rem;
+}
+.verse h4, .chorus h4 { /* For Verse/Chorus headings */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Back to regular font for headings */
+    color: #014421; /* Your site's primary green */
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+.chord {
+    font-weight: bold;
+    color: #8B0000; /* Your site's accent red for chords */
+    display: inline-block;
+    position: relative;
+    top: -0.6em; /* Adjust to position chords above lyrics - tweak as needed */
+    margin-right: 2px; /* Space after chord */
+    font-size: 0.9em; /* Relative to the .lyrics-section font-size */
+}
+.line {
+    margin-bottom: 0.8em; /* Space between lines of lyrics with chords */
+    min-height: 1em; /* Ensures space for chords even on empty lyric lines */
+}
+.song-notes { /* Styles for the optional "Strumming Pattern" section */
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+.song-notes h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #014421;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+.song-notes p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */ /* This line should already be there, marking the start of the next section */
+/* @media screen and (max-width: 768px) { ... } */
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
