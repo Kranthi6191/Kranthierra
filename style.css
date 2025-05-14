@@ -564,7 +564,42 @@ footer {
         max-width: 80%; /* Adjust for smaller screens if needed */
     }
 }
+/* ==========================================================================
+   Google Form Embed Styles (for Contact Page)
+   ========================================================================== */
+.google-form-container {
+    position: relative; /* Needed for aspect ratio trick */
+    width: 100%;
+    max-width: 700px; /* Adjust max-width as needed */
+    margin: 0 auto 2rem auto; /* Center the container and add bottom margin */
+    padding-bottom: 120%; /* This creates an aspect ratio container (adjust percentage based on form height) */
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
+    border-radius: 8px; /* Optional rounded corners */
+}
 
+.google-form-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust padding-bottom for responsiveness if needed */
+@media screen and (max-width: 768px) {
+    .google-form-container {
+         /* Adjust padding-bottom for different heights on smaller screens */
+         padding-bottom: 150%; /* Example: might need more height */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .google-form-container {
+         padding-bottom: 180%; /* Example: might need even more height on very small screens */
+    }
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
