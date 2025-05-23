@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What does God require of us? - Kranthi Erra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.jpeg" type="Favicon/Jpeg">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Kranthi Erra</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+                <li><a href="music.html">Music Sheets</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipe-detail blog-post-detail">
+            <article>
+                <h2>Why does an omnipotent God ask men to do things sometimes?</h2>
+                <p class="recipe-meta">
+                    Posted by: <span class="author">Kranthi Erra</span> |
+                    Date: <span class="date">May 11, 2025</span> |
+                    Category: <span class="category">Faith & Reflection</span>
+                </p>
+
+                <div class="image-container" style="margin-bottom: 2rem;">
+                    <img src="Images/Jesus-Heals-BlindMan.jpg" alt="Jesus and Blind Man">
+                    </div>
+
+                <div class="blog-post-content">
+                    <p>Under construction</p>
+                    <p>Under consutruction</p>
+
+                    <h3>Under construction</h3>
+                    <p>Under construction</p>
+                    <ul>
+                        <li>point 1</li>
+                        <li>Point 2</li>
+                        <li>Point 3</li>
+                        <li>Point 3</li>
+                    </ul>
+
+                    <h3>Another heading</h3>
+                    <p>Under construction</p>
+
+                    <blockquote>
+                        <p>"The heavens declare the glory of God; the skies proclaim the work of his hands." - Psalm 19:1</p>
+                    </blockquote>
+
+                    <h3>Another Heading</h3>
+                    <p>Final section</p>
+                    <p>These are just a few personal reflections. I hope they might resonate with some of you, or perhaps inspire you to find your own moments of peace and connection in your faith journey. I'd love to hear your thoughts in the comments if this were an interactive blog!</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
