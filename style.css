@@ -1,714 +1,729 @@
 /* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f3f3;
-    color: #222;
-    /* Removed body fadeIn animation, handled by JS for main content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #222;
+    /* Removed body fadeIn animation, handled by JS for main content */
 }
 
 header {
-    background-color: #014421; /* Deep forest green */
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #014421; /* Deep forest green */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em; /* Or adjust as needed */
-    letter-spacing: 1px;
+    margin: 0;
+    font-size: 2em; /* Or adjust as needed */
+    letter-spacing: 1px;
 }
 
 header h1 a {
-    color: white;
-    text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    padding: 0;
-    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #8B0000; /* Dark red */
-    transform: translateY(-2px);
-    outline: 2px solid #8B0000; /* Focus outline */
-    outline-offset: 2px;
+    color: #8B0000; /* Dark red */
+    transform: translateY(-2px);
+    outline: 2px solid #8B0000; /* Focus outline */
+    outline-offset: 2px;
 }
 
 main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    opacity: 0; /* Initial state for JS fade-in */
-    transition: opacity 0.5s ease-in-out; /* Transition for JS fade-in */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    opacity: 0; /* Initial state for JS fade-in */
+    transition: opacity 0.5s ease-in-out; /* Transition for JS fade-in */
 }
 
 main.loaded {
-    opacity: 1; /* Final state for JS fade-in */
+    opacity: 1; /* Final state for JS fade-in */
 }
 
 section {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 h1, /* General h1 if not in header */
 h2,
 h3 {
-    color: #014421;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    color: #014421;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 a { /* General link color if not in nav or specific components */
-    color: #8B0000;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #8B0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover,
 a:focus { /* Added focus for general links */
-    color: #000;
-    outline: 1px dashed #000; /* Example focus for general links */
-    outline-offset: 1px;
+    color: #000;
+    outline: 1px dashed #000; /* Example focus for general links */
+    outline-offset: 1px;
 }
 
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 4rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #014421;
-    color: white !important; /* Ensure white text over background */
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure no underline from general 'a' styles */
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #014421;
+    color: white !important; /* Ensure white text over background */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Ensure no underline from general 'a' styles */
 }
 
 .button:hover,
 .button:focus {
-    background-color: #013017;
-    transform: scale(1.05);
-    color: white !important;
-    outline: 2px solid #013017; /* Focus outline */
-    outline-offset: 2px;
+    background-color: #013017;
+    transform: scale(1.05);
+    color: white !important;
+    outline: 2px solid #013017; /* Focus outline */
+    outline-offset: 2px;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Hero.png');
-    /* Ensure 'images/hero-image.jpg' exists */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 5rem 2rem;
-    border-radius: 15px;
-    margin-bottom: 3rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Hero.png');
+    /* Ensure 'images/hero-image.jpg' exists */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 { /* Hero specific h1 */
-    font-size: 3.5em;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    color: white; /* Ensure hero h1 is white */
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: white; /* Ensure hero h1 is white */
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 2rem;
-    line-height: 1.8;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Featured Posts Grid */
 .featured-posts {
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .post-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .post-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .post-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
 }
 
 .post-card-content {
-    padding: 1.5rem;
+    padding: 1.5rem;
 }
 
 .post-card h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.5em;
-    color: #014421;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.5em;
+    color: #014421;
 }
 
 .post-card p {
-    color: #555;
-    line-height: 1.6;
+    color: #555;
+    line-height: 1.6;
 }
 
 /* Featured Music/Recipe */
 .featured-music,
 .featured-recipe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .featured-music:hover,
 .featured-recipe:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .featured-content {
-    flex: 1;
+    flex: 1;
 }
 
 .featured-content h2 {
-    font-size: 2em;
-    color: #014421;
-    margin-bottom: 1rem;
+    font-size: 2em;
+    color: #014421;
+    margin-bottom: 1rem;
 }
 
 .featured-content p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .featured-image {
-    flex: 1;
-    max-width: 40%;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .featured-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .featured-image:hover img {
-    transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Subscribe Section */
 .subscribe {
-    text-align: center;
-    padding: 3rem 2rem;
-    background-color: #f0f8ff; /* Alice blue - gentle background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f0f8ff; /* Alice blue - gentle background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
 }
 
 .subscribe h2 {
-    font-size: 2.5em;
-    color: #014421;
-    margin-bottom: 1rem;
+    font-size: 2.5em;
+    color: #014421;
+    margin-bottom: 1rem;
 }
 
 .subscribe p {
-    color: #555;
-    font-size: 1.1em;
-    margin-bottom: 2rem;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 2rem;
 }
 
 .subscribe form {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items for better appearance if button is taller */
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items for better appearance if button is taller */
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .subscribe input[type="email"] {
-    padding: 0.75rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    flex-grow: 1; /* Allow email input to take available space */
-    min-width: 200px; /* Prevent it from becoming too small */
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1; /* Allow email input to take available space */
+    min-width: 200px; /* Prevent it from becoming too small */
 }
 
 /* Quote Section on Homepage */
 .quote-section {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    font-style: italic;
-    color: #444;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-style: italic;
+    color: #444;
 }
 .quote-section p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 
 /* ==========================================================================
-   Recipe Page Specific Styles (recipes.html & chicken-gyro.html)
-   ========================================================================== */
+    Recipe Page Specific Styles (recipes.html & chicken-gyro.html)
+    ========================================================================== */
 
 /* Recipe List Section (recipes.html) */
 .recipe-list-section {
-    padding: 2rem;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .recipe-list-section h2 {
-    font-size: 2.5rem;
-    color: #014421;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 2.5rem;
+    color: #014421;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Recipe Grid Container (recipes.html) */
 .recipe-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
 }
 
 /* Recipe Card (recipes.html) */
 .recipe-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex; /* Added for consistent card height if content varies */
-    flex-direction: column; /* Stack content vertically */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Added for consistent card height if content varies */
+    flex-direction: column; /* Stack content vertically */
 }
 
 .recipe-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .recipe-card a { /* Make the whole card clickable */
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: inherit;
-    height: 100%; /* Make link fill the card */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    height: 100%; /* Make link fill the card */
 }
 
 .recipe-image-wrapper {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .recipe-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .recipe-card:hover .recipe-image-wrapper img {
-    transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .recipe-card-content {
-    padding: 1.5rem;
-    text-align: center;
-    flex-grow: 1; /* Allows content to expand, pushing excerpt down if needed */
+    padding: 1.5rem;
+    text-align: center;
+    flex-grow: 1; /* Allows content to expand, pushing excerpt down if needed */
 }
 
 .recipe-card-content h3 {
-    font-size: 1.5rem;
-    color: #014421;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    color: #014421;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
 }
 
 .recipe-card-content p.recipe-excerpt { /* Made selector more specific */
-    font-size: 0.9em; /* Excerpt text */
-    color: #555;
-    line-height: 1.4;
+    font-size: 0.9em; /* Excerpt text */
+    color: #555;
+    line-height: 1.4;
 }
 
 /* Recipe Detail Page (chicken-gyro.html) */
 .recipe-detail { /* Class for the main content of a single recipe page */
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .recipe-detail h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1rem;
 }
 
 .recipe-meta {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
 }
 
 .recipe-meta span {
-    margin: 0 0.5rem;
+    margin: 0 0.5rem;
 }
 
 .recipe-detail .image-container {
-    width: 100%;
-    max-width: 600px; /* Limit image width for better layout */
-    margin: 0 auto 2rem auto; /* Center image */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px; /* Limit image width for better layout */
+    margin: 0 auto 2rem auto; /* Center image */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .recipe-detail .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .recipe-ingredients, .recipe-instructions {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .recipe-ingredients h3, .recipe-instructions h3 {
-    font-size: 1.8em;
-    color: #014421;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #014421;
+    font-size: 1.8em;
+    color: #014421;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #014421;
 }
 
 .recipe-ingredients ul, .recipe-instructions ol {
-    padding-left: 20px;
-    line-height: 1.8;
-    color: #333;
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #333;
 }
 
 .recipe-ingredients ul li, .recipe-instructions ol li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
-/* === Blog Post Specific Styles (5-reasons-why.html) === */
-.blog-post-detail .blog-post-content p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
+/*
+    ==========================================================================
+    Blog Post Specific Styles
+    ==========================================================================
+*/
+/*
+    The following rules adjust spacing to be more suitable for a long article,
+    overriding some of the recipe-specific styles without being too generic.
+*/
+
+.blog-post-detail p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem; /* This creates a cleaner separation between paragraphs */
 }
-.blog-post-detail .blog-post-content p b {
-    display: block; /* Ensures bolded text has its own line */
-    margin-top: 1rem; /* Adds space before bolded text to separate it from the previous paragraph */
+
+/* This targets the bolded sections, giving them a slight lift for emphasis */
+.blog-post-detail p b {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.blog-post-detail h3 {
+    margin-top: 2rem; /* Add more space before subheadings */
 }
 
 /* ==========================================================================
-   Music Chords Page Styles
-   ========================================================================== */
+    Music Chords Page Styles
+    ========================================================================== */
 
 .song-content-section {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 .song-meta {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-    font-size: 0.9em;
-    color: #555;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    color: #555;
 }
 .song-meta p {
-    margin: 0.3rem 0;
+    margin: 0.3rem 0;
 }
 .lyrics-section {
-    font-family: 'Courier New', Courier, monospace; /* Monospace for better chord alignment */
-    line-height: 1.8;
-    font-size: 1.1em; /* You can adjust this base size for lyrics */
+    font-family: 'Courier New', Courier, monospace; /* Monospace for better chord alignment */
+    line-height: 1.8;
+    font-size: 1.1em; /* You can adjust this base size for lyrics */
 }
 .verse, .chorus {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 .verse h4, .chorus h4 { /* For Verse/Chorus headings */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Back to regular font for headings */
-    color: #014421; /* Your site's primary green */
-    font-size: 1.2em;
-    margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Back to regular font for headings */
+    color: #014421; /* Your site's primary green */
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
 }
 .chord {
-    font-weight: bold;
-    color: #8B0000; /* Your site's accent red for chords */
-    display: inline-block;
-    position: relative;
-    top: -0.6em; /* Adjust to position chords above lyrics - tweak as needed */
-    margin-right: 2px; /* Space after chord */
-    font-size: 0.9em; /* Relative to the .lyrics-section font-size */
+    font-weight: bold;
+    color: #8B0000; /* Your site's accent red for chords */
+    display: inline-block;
+    position: relative;
+    top: -0.6em; /* Adjust to position chords above lyrics - tweak as needed */
+    margin-right: 2px; /* Space after chord */
+    font-size: 0.9em; /* Relative to the .lyrics-section font-size */
 }
 .line {
-    margin-bottom: 0.8em; /* Space between lines of lyrics with chords */
-    min-height: 1em; /* Ensures space for chords even on empty lyric lines */
+    margin-bottom: 0.8em; /* Space between lines of lyrics with chords */
+    min-height: 1em; /* Ensures space for chords even on empty lyric lines */
 }
 .song-notes { /* Styles for the optional "Strumming Pattern" section */
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eee;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
 }
 .song-notes h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #014421;
-    font-size: 1.2em;
-    margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #014421;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
 }
 .song-notes p {
-    font-size: 1em;
-    color: #333;
-    line-height: 1.6;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* ==========================================================================
-   About Page Specific Styles
-   ========================================================================== */
+    About Page Specific Styles
+    ========================================================================== */
 .about-image-container {
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .about-image-container img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .youtube-link-paragraph {
-    text-align: center;
-    margin-top: 2rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /* Optional: Add responsive adjustments if needed for the about page image */
 @media screen and (max-width: 600px) {
-    .about-image-container img {
-        max-width: 80%; /* Adjust for smaller screens if needed */
-    }
+    .about-image-container img {
+        max-width: 80%; /* Adjust for smaller screens if needed */
+    }
 }
 /* ==========================================================================
-   Google Form Embed Styles (for Contact Page)
-   ========================================================================== */
+    Google Form Embed Styles (for Contact Page)
+    ========================================================================== */
 .google-form-container {
-    position: relative; /* Needed for aspect ratio trick */
-    width: 100%;
-    max-width: 700px; /* Adjust max-width as needed */
-    margin: 0 auto 2rem auto; /* Center the container and add bottom margin */
-    padding-bottom: 120%; /* This creates an aspect ratio container (adjust percentage based on form height) */
-    height: 0;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
-    border-radius: 8px; /* Optional rounded corners */
+    position: relative; /* Needed for aspect ratio trick */
+    width: 100%;
+    max-width: 700px; /* Adjust max-width as needed */
+    margin: 0 auto 2rem auto; /* Center the container and add bottom margin */
+    padding-bottom: 120%; /* This creates an aspect ratio container (adjust percentage based on form height) */
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
+    border-radius: 8px; /* Optional rounded corners */
 }
 
 .google-form-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Adjust padding-bottom for responsiveness if needed */
 @media screen and (max-width: 768px) {
-    .google-form-container {
-         /* Adjust padding-bottom for different heights on smaller screens */
-         padding-bottom: 150%; /* Example: might need more height */
-    }
+    .google-form-container {
+         /* Adjust padding-bottom for different heights on smaller screens */
+         padding-bottom: 150%; /* Example: might need more height */
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .google-form-container {
-         padding-bottom: 180%; /* Example: might need even more height on very small screens */
-    }
+    .google-form-container {
+         padding-bottom: 180%; /* Example: might need even more height on very small screens */
+    }
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center; /* Center title if it wraps */
-    }
-    header h1 {
-        margin-bottom: 0.5rem; /* Space between title and nav if stacked */
-    }
-    nav ul {
-        margin-top: 1rem;
-        justify-content: center;
-        flex-wrap: wrap; /* Allow nav items to wrap */
-        gap: 0.5rem; /* Reduce gap for smaller screens */
-    }
-    nav a {
-        padding: 0.5rem 0.75rem; /* Slightly smaller padding */
-    }
+    header {
+        flex-direction: column;
+        text-align: center; /* Center title if it wraps */
+    }
+    header h1 {
+        margin-bottom: 0.5rem; /* Space between title and nav if stacked */
+    }
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        gap: 0.5rem; /* Reduce gap for smaller screens */
+    }
+    nav a {
+        padding: 0.5rem 0.75rem; /* Slightly smaller padding */
+    }
 
-    main {
-        padding: 1rem;
-        margin: 1rem auto;
-    }
+    main {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
 
-    .hero {
-        padding: 3rem 1rem;
-    }
+    .hero {
+        padding: 3rem 1rem;
+    }
 
-    .hero h1 {
-        font-size: 2.5em;
-    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
 
-    .featured-music,
-    .featured-recipe {
-        flex-direction: column;
-        text-align: center;
-    }
+    .featured-music,
+    .featured-recipe {
+        flex-direction: column;
+        text-align: center;
+    }
 
-    .featured-image {
-        max-width: 80%; /* Allow image to be larger relative to content */
-        margin: 0 auto 1rem auto; /* Center image */
-    }
+    .featured-image {
+        max-width: 80%; /* Allow image to be larger relative to content */
+        margin: 0 auto 1rem auto; /* Center image */
+    }
 
-    .subscribe form {
-        flex-direction: column;
-        align-items: stretch; /* Make input and button full width of form */
-        gap: 1rem;
-    }
-    .subscribe input[type="email"] {
-        width: auto; /* Let flexbox handle it, remove fixed width */
-    }
+    .subscribe form {
+        flex-direction: column;
+        align-items: stretch; /* Make input and button full width of form */
+        gap: 1rem;
+    }
+    .subscribe input[type="email"] {
+        width: auto; /* Let flexbox handle it, remove fixed width */
+    }
 
-    .recipe-list-section h2 {
-        font-size: 2rem;
-    }
-    .recipe-detail h2 {
-        font-size: 2em;
-    }
-    .recipe-ingredients h3, .recipe-instructions h3 {
-        font-size: 1.5em;
-    }
+    .recipe-list-section h2 {
+        font-size: 2rem;
+    }
+    .recipe-detail h2 {
+        font-size: 2em;
+    }
+    .recipe-ingredients h3, .recipe-instructions h3 {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    nav a {
-        font-size: 0.9em;
-    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav a {
+        font-size: 0.9em;
+    }
 
-    .hero h1 {
-        font-size: 2em;
-    }
-    .hero p {
-        font-size: 1em;
-    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
 
-    .post-card-content h3 {
-        font-size: 1.2em;
-    }
-    .post-card-content p {
-        font-size: 0.9em;
-    }
+    .post-card-content h3 {
+        font-size: 1.2em;
+    }
+    .post-card-content p {
+        font-size: 0.9em;
+    }
 
-    .featured-content h2 {
-        font-size: 1.8em;
-    }
+    .featured-content h2 {
+        font-size: 1.8em;
+    }
 
-    .subscribe h2 {
-        font-size: 2em;
-    }
+    .subscribe h2 {
+        font-size: 2em;
+    }
 
-    .recipe-card-content h3 {
-        font-size: 1.2rem;
-    }
+    .recipe-card-content h3 {
+        font-size: 1.2rem;
+    }
 
-    .recipe-card-content p.recipe-excerpt {
-        font-size: 1rem;
-    }
+    .recipe-card-content p.recipe-excerpt {
+        font-size: 1rem;
+    }
 }
