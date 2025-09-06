@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #f3f3f3;
     color: #222;
-    /* Removed body fadeIn animation, handled by JS for main content */
 }
 
 header {
@@ -24,7 +23,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2em; /* Or adjust as needed */
+    font-size: 2em;
     letter-spacing: 1px;
 }
 
@@ -52,9 +51,9 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #8B0000; /* Dark red */
+    color: #8B0000;
     transform: translateY(-2px);
-    outline: 2px solid #8B0000; /* Focus outline */
+    outline: 2px solid #8B0000;
     outline-offset: 2px;
 }
 
@@ -62,12 +61,12 @@ main {
     padding: 2rem;
     max-width: 1200px;
     margin: 2rem auto;
-    opacity: 0; /* Initial state for JS fade-in */
-    transition: opacity 0.5s ease-in-out; /* Transition for JS fade-in */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 main.loaded {
-    opacity: 1; /* Final state for JS fade-in */
+    opacity: 1;
 }
 
 section {
@@ -84,7 +83,7 @@ section:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-h1, /* General h1 if not in header */
+h1,
 h2,
 h3 {
     color: #014421;
@@ -92,16 +91,16 @@ h3 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-a { /* General link color if not in nav or specific components */
+a {
     color: #8B0000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover,
-a:focus { /* Added focus for general links */
+a:focus {
     color: #000;
-    outline: 1px dashed #000; /* Example focus for general links */
+    outline: 1px dashed #000;
     outline-offset: 1px;
 }
 
@@ -118,14 +117,14 @@ footer {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #014421;
-    color: white !important; /* Ensure white text over background */
+    color: white !important;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Ensure no underline from general 'a' styles */
+    text-decoration: none;
 }
 
 .button:hover,
@@ -133,14 +132,13 @@ footer {
     background-color: #013017;
     transform: scale(1.05);
     color: white !important;
-    outline: 2px solid #013017; /* Focus outline */
+    outline: 2px solid #013017;
     outline-offset: 2px;
 }
 
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Hero.png');
-    /* Ensure 'images/hero-image.jpg' exists */
     background-size: cover;
     background-position: center;
     color: white;
@@ -151,12 +149,12 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hero h1 { /* Hero specific h1 */
+.hero h1 {
     font-size: 3.5em;
     margin-bottom: 1rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    color: white; /* Ensure hero h1 is white */
+    color: white;
 }
 
 .hero p {
@@ -273,7 +271,7 @@ footer {
 .subscribe {
     text-align: center;
     padding: 3rem 2rem;
-    background-color: #f0f8ff; /* Alice blue - gentle background */
+    background-color: #f0f8ff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
@@ -294,7 +292,7 @@ footer {
 .subscribe form {
     display: flex;
     justify-content: center;
-    align-items: center; /* Align items for better appearance if button is taller */
+    align-items: center;
     gap: 1rem;
     max-width: 500px;
     margin: 0 auto;
@@ -304,8 +302,8 @@ footer {
     padding: 0.75rem 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    flex-grow: 1; /* Allow email input to take available space */
-    min-width: 200px; /* Prevent it from becoming too small */
+    flex-grow: 1;
+    min-width: 200px;
 }
 
 /* Quote Section on Homepage */
@@ -357,8 +355,8 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex; /* Added for consistent card height if content varies */
-    flex-direction: column; /* Stack content vertically */
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-card:hover {
@@ -366,12 +364,12 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.recipe-card a { /* Make the whole card clickable */
+.recipe-card a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: inherit;
-    height: 100%; /* Make link fill the card */
+    height: 100%;
 }
 
 .recipe-image-wrapper {
@@ -394,7 +392,7 @@ footer {
 .recipe-card-content {
     padding: 1.5rem;
     text-align: center;
-    flex-grow: 1; /* Allows content to expand, pushing excerpt down if needed */
+    flex-grow: 1;
 }
 
 .recipe-card-content h3 {
@@ -404,14 +402,14 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-.recipe-card-content p.recipe-excerpt { /* Made selector more specific */
-    font-size: 0.9em; /* Excerpt text */
+.recipe-card-content p.recipe-excerpt {
+    font-size: 0.9em;
     color: #555;
     line-height: 1.4;
 }
 
 /* Recipe Detail Page (chicken-gyro.html) */
-.recipe-detail { /* Class for the main content of a single recipe page */
+.recipe-detail {
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -439,8 +437,8 @@ footer {
 
 .recipe-detail .image-container {
     width: 100%;
-    max-width: 600px; /* Limit image width for better layout */
-    margin: 0 auto 2rem auto; /* Center image */
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -474,29 +472,45 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-/*
-    ==========================================================================
+/* ==========================================================================
     Blog Post Specific Styles
-    ==========================================================================
-*/
-/*
-    The following rules adjust spacing to be more suitable for a long article,
-    overriding some of the recipe-specific styles without being too generic.
-*/
+    ========================================================================== */
 
-.blog-post-detail p {
-    line-height: 1.6;
-    margin-bottom: 1.5rem; /* This creates a cleaner separation between paragraphs */
+/* This new block of CSS will target only your blog post pages. */
+.blog-post-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-/* This targets the bolded sections, giving them a slight lift for emphasis */
-.blog-post-detail p b {
-    display: block;
-    margin-top: 1.5rem;
+/* These specific rules override the recipe-detail and center-alignment. */
+.blog-post-detail h2 {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-detail .post-meta {
+    text-align: left;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.blog-post-detail p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
 .blog-post-detail h3 {
-    margin-top: 2rem; /* Add more space before subheadings */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #014421;
 }
 
 /* ==========================================================================
@@ -520,33 +534,33 @@ footer {
     margin: 0.3rem 0;
 }
 .lyrics-section {
-    font-family: 'Courier New', Courier, monospace; /* Monospace for better chord alignment */
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.8;
-    font-size: 1.1em; /* You can adjust this base size for lyrics */
+    font-size: 1.1em;
 }
 .verse, .chorus {
     margin-bottom: 1.5rem;
 }
-.verse h4, .chorus h4 { /* For Verse/Chorus headings */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Back to regular font for headings */
-    color: #014421; /* Your site's primary green */
+.verse h4, .chorus h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #014421;
     font-size: 1.2em;
     margin-bottom: 0.5rem;
 }
 .chord {
     font-weight: bold;
-    color: #8B0000; /* Your site's accent red for chords */
+    color: #8B0000;
     display: inline-block;
     position: relative;
-    top: -0.6em; /* Adjust to position chords above lyrics - tweak as needed */
-    margin-right: 2px; /* Space after chord */
-    font-size: 0.9em; /* Relative to the .lyrics-section font-size */
+    top: -0.6em;
+    margin-right: 2px;
+    font-size: 0.9em;
 }
 .line {
-    margin-bottom: 0.8em; /* Space between lines of lyrics with chords */
-    min-height: 1em; /* Ensures space for chords even on empty lyric lines */
+    margin-bottom: 0.8em;
+    min-height: 1em;
 }
-.song-notes { /* Styles for the optional "Strumming Pattern" section */
+.song-notes {
     margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 1px solid #eee;
@@ -586,22 +600,22 @@ footer {
 /* Optional: Add responsive adjustments if needed for the about page image */
 @media screen and (max-width: 600px) {
     .about-image-container img {
-        max-width: 80%; /* Adjust for smaller screens if needed */
+        max-width: 80%;
     }
 }
 /* ==========================================================================
     Google Form Embed Styles (for Contact Page)
     ========================================================================== */
 .google-form-container {
-    position: relative; /* Needed for aspect ratio trick */
+    position: relative;
     width: 100%;
-    max-width: 700px; /* Adjust max-width as needed */
-    margin: 0 auto 2rem auto; /* Center the container and add bottom margin */
-    padding-bottom: 120%; /* This creates an aspect ratio container (adjust percentage based on form height) */
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    padding-bottom: 120%;
     height: 0;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
-    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 .google-form-container iframe {
@@ -615,14 +629,13 @@ footer {
 /* Adjust padding-bottom for responsiveness if needed */
 @media screen and (max-width: 768px) {
     .google-form-container {
-         /* Adjust padding-bottom for different heights on smaller screens */
-         padding-bottom: 150%; /* Example: might need more height */
+         padding-bottom: 150%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .google-form-container {
-         padding-bottom: 180%; /* Example: might need even more height on very small screens */
+         padding-bottom: 180%;
     }
 }
 
@@ -630,19 +643,19 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
-        text-align: center; /* Center title if it wraps */
+        text-align: center;
     }
     header h1 {
-        margin-bottom: 0.5rem; /* Space between title and nav if stacked */
+        margin-bottom: 0.5rem;
     }
     nav ul {
         margin-top: 1rem;
         justify-content: center;
-        flex-wrap: wrap; /* Allow nav items to wrap */
-        gap: 0.5rem; /* Reduce gap for smaller screens */
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
     nav a {
-        padding: 0.5rem 0.75rem; /* Slightly smaller padding */
+        padding: 0.5rem 0.75rem;
     }
 
     main {
@@ -665,17 +678,17 @@ footer {
     }
 
     .featured-image {
-        max-width: 80%; /* Allow image to be larger relative to content */
-        margin: 0 auto 1rem auto; /* Center image */
+        max-width: 80%;
+        margin: 0 auto 1rem auto;
     }
 
     .subscribe form {
         flex-direction: column;
-        align-items: stretch; /* Make input and button full width of form */
+        align-items: stretch;
         gap: 1rem;
     }
     .subscribe input[type="email"] {
-        width: auto; /* Let flexbox handle it, remove fixed width */
+        width: auto;
     }
 
     .recipe-list-section h2 {
