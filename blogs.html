@@ -3,118 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kranthi Erra - Blogs</title>
+    <title>Kranthi Erra - Theology & Reflections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Images/Icon.jpeg" type="Favicon/Jpeg">
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blogs.html" class="active">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html" class="active">Theology</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="recipe-list-section">
-            <h2>My Blog Posts</h2>
-            <div class="recipe-grid-container">
-                <article class="recipe-card">
-                    <a href="inspiration-and-inerrancy.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/inspiration-and-inerrancy.png" alt="Thumbnail for New Blog Post">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Making Sense of the Bible: Its Inspiration and Inerrancy</h3>
-                            <p class="recipe-excerpt">Explore the concepts of divine inspiration and inerrancy, delving into biblical and historical evidence to understand why Christians trust the Bible as the true Word of God.</p>
-                        </div>
-                    </a>
-                </article>
+        <section class="page-header">
+            <h1>Reflections & Theology</h1>
+            <p>Thoughts brewed in silence, grounded in scripture, and written to encourage.</p>
+        </section>
 
-                <article class="recipe-card">
-                    <a href="GodsTiming.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/GodsTiming.jpg" alt="Thumbnail for First Blog Post">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Why is God Not Meeting My Expectation?</h3>
-                            <p class="recipe-excerpt">Oftentimes, as believers, we want God to act according to our convenience, not the other way around. But when He doesn't, it can lead us to question our entire faith.</p>
-                        </div>
-                    </a>
-                </article>
+        <section class="section">
+            <div class="container">
+                <div class="post-grid">
+                    
+                    <article class="post-card hidden">
+                        <a href="inspiration-and-inerrancy.html">
+                            <div class="card-image"><img src="Images/inspiration-and-inerrancy.png" alt="Bible Study"></div>
+                            <div class="card-content">
+                                <span class="category">Theology</span>
+                                <h3>Making Sense of the Bible</h3>
+                                <p>Explore the concepts of divine inspiration and inerrancy, and why we trust the Bible as the true Word of God.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="recipe-card">
-                    <a href="Intercession.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/Intercession.jpg" alt="Thumbnail for Second Blog Post">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>The power of Intercession</h3>
-                            <p class="recipe-excerpt">Paul in the 1 Timothy 2:1 says, I urge that supplications, prayers, intercessions,and thanksgivings be made for all people and he also says in Romans, Who is to condemn? Christ Jesus is the one who died—more than that, who was raised—who is at the right hand of God, who indeed is interceding for us.Romans 8:34. read my thoughts about why is intercession important</p>
-                        </div>
-                    </a>
-                </article>
+                    <article class="post-card hidden delay-100">
+                        <a href="GodsTiming.html">
+                            <div class="card-image"><img src="Images/GodsTiming.jpg" alt="Clock"></div>
+                            <div class="card-content">
+                                <span class="category">Faith</span>
+                                <h3>Why is God Not Meeting My Expectation?</h3>
+                                <p>We want God to act according to our convenience. But when He doesn't, it can lead us to question our entire faith.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="recipe-card">
-                    <a href="Why-is-it-so-hard-to-forgive.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/Forgiveness.jpg" alt="Thumbnail for Third Blog Post">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Why is it so hard to forgive?</h3>
-                            <p class="recipe-excerpt">Forgiving is hard because wounds go deep, but Jesus calls us to forgive without limits—just as we have been forgiven.</p>
-                        </div>
-                    </a>
-                </article>
-                
-                <article class="recipe-card">
-                    <a href="5-reasons-why.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/5-reasons-why.png" alt="Thumbnail for Bible Blog Post">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>5 Reasons why: Reading the Bible is important</h3>
-                            <p class="recipe-excerpt">Reading the Bible is much like nutrition for a Christian. Just as food fuels our bodies, God’s Word fuels our Spirit.</p>
-                        </div>
-                    </a>
-                </article>
-                
-                <article class="recipe-card">
-                    <a href="Transformation-is-a-choice.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/transformation.png" alt="Thumbnail for transformation Post">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Transformation on the inside and outside is a choice</h3>
-                            <p class="recipe-excerpt">Explore how transformation is a daily choice, starting with the renewal of the mind (Romans 12:2), and leading to a life that reflects Christ.</p>
-                        </div>
-                    </a>
-                </article>
+                    <article class="post-card hidden">
+                        <a href="Intercession.html">
+                            <div class="card-image"><img src="Images/Intercession.jpg" alt="Praying Hands"></div>
+                            <div class="card-content">
+                                <span class="category">Prayer</span>
+                                <h3>The Power of Intercession</h3>
+                                <p>Christ Jesus is at the right hand of God interceding for us. Why is standing in the gap so important?</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="recipe-card">
-                    <a href="Authenticity.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/Authenticity.jpg" alt="Well and Sun">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Encountering Authenticity</h3>
-                            <p class="recipe-excerpt">Exploring the story of Jesus and the Samaritan woman through the lens of modern rivalries and personal history.</p>
-                        </div>
-                    </a>
-                </article>
-                
+                    <article class="post-card hidden delay-100">
+                        <a href="Why-is-it-so-hard-to-forgive.html">
+                            <div class="card-image"><img src="Images/Forgiveness.jpg" alt="Forgiveness"></div>
+                            <div class="card-content">
+                                <span class="category">Christian Living</span>
+                                <h3>Why is it so hard to forgive?</h3>
+                                <p>Forgiving is hard because wounds go deep, but Jesus calls us to forgive without limits.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post-card hidden">
+                        <a href="5-reasons-why.html">
+                            <div class="card-image"><img src="Images/5-reasons-why.png" alt="Open Bible"></div>
+                            <div class="card-content">
+                                <span class="category">Bible Study</span>
+                                <h3>5 Reasons Reading the Bible is Important</h3>
+                                <p>Just as food fuels our bodies, God’s Word fuels our Spirit. Here is why you need it daily.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post-card hidden delay-100">
+                        <a href="Transformation-is-a-choice.html">
+                            <div class="card-image"><img src="Images/transformation.png" alt="Butterfly"></div>
+                            <div class="card-content">
+                                <span class="category">Growth</span>
+                                <h3>Transformation is a Choice</h3>
+                                <p>Transformation starts with the renewal of the mind (Romans 12:2) and leads to a life that reflects Christ.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post-card hidden">
+                        <a href="Authenticity.html">
+                            <div class="card-image"><img src="Images/Authenticity.jpg" alt="Well"></div>
+                            <div class="card-content">
+                                <span class="category">Reflection</span>
+                                <h3>Encountering Authenticity</h3>
+                                <p>Exploring the story of Jesus and the Samaritan woman through the lens of modern rivalries.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+                <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Theology</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
