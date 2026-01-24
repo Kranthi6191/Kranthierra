@@ -3,87 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kranthi Erra - Home</title>
+    <title>Kranthi Erra - Faith & Flavors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Images/Icon.jpeg" type="Icon/Jpeg"> </head>
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
+</head>
 <body>
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1> <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blogs.html">Theology</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
         <section class="hero">
-            <h1>Welcome to Kranthi's personal blog</h1>
-            <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
-            <a href="about.html" class="button">Learn More About Me</a> </section>
+            <div class="hero-overlay"></div>
+            <div class="hero-content hidden">
+                <h1>Faith, Reflection &<br>Culinary Art.</h1>
+                <p>Welcome to my personal corner of the internet. Exploring theology, sharing life, and savoring the best recipes.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="button primary">Meet Kranthi</a>
+                    <a href="recipes.html" class="button secondary">See Recipes</a>
+                </div>
+            </div>
+        </section>
 
-        <section class="featured-posts">
-            <h2>Faith & Theology related posts</h2>
-            <p><b>I read a lot and I think and have some thoughts about my reading when I'm either outdoors, can't fall asleep or sometimes when in bathroom, I'll post some of them here.</b></p>
-            <div class="post-grid">
-                <article class="post-card">
-                    <a href="inspiration-and-inerrancy.html"> <img src="Images/inspiration-and-inerrancy.png" alt="Thumbnail image for the inspiration and inerrancy post"> <div class="post-card-content">
-                            <h3>Making Sense of the Bible: Its Inspiration and Inerrancy</h3><p>Explore the concepts of divine inspiration and inerrancy, delving into biblical and historical evidence to understand why Christians trust the Bible as the true Word of God.</p> </div>
-                    </a>
-                </article>
+        <section class="section featured-posts">
+            <div class="container">
+                <div class="section-header hidden">
+                    <span class="subtitle">Theology & Thoughts</span>
+                    <h2>Latest Reflections</h2>
+                    <p>Thoughts brewed in silence and grounded in scripture.</p>
+                </div>
+
+                <div class="post-grid">
+                    <article class="post-card hidden">
+                        <a href="inspiration-and-inerrancy.html">
+                            <div class="card-image">
+                                <img src="Images/inspiration-and-inerrancy.png" alt="Bible Study">
+                            </div>
+                            <div class="card-content">
+                                <span class="category">Theology</span>
+                                <h3>Making Sense of the Bible</h3>
+                                <p>Explore the concepts of divine inspiration and inerrancy, and why we trust the Word.</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="post-card hidden delay-100">
+                        <a href="Intercession.html">
+                            <div class="card-image">
+                                <img src="Images/Intercession.jpg" alt="Prayer">
+                            </div>
+                            <div class="card-content">
+                                <span class="category">Faith</span>
+                                <h3>The Power of Intercession</h3>
+                                <p>Paul urges supplications and prayers. Why is standing in the gap for others so vital?</p>
+                                <span class="read-more">Read Article &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
                 
-                <article class="post-card">
-                    <a href="Intercession.html"> <img src="Images/Intercession.jpg" alt="Thumbnail image for the Intercession blog post"> <div class="post-card-content">
-                            <h3>Intercession</h3> <p>Paul in the 1 Timothy says, First of all, then, I urge that supplications, prayers, intercessions, 
-                                and thanksgivings be made for all people 1 Timothy 2:1 and he also says in Romans, Who is to condemn? Christ Jesus is the one who died—more than that,
-                                who was raised—who is at the right hand of God, who indeed is interceding for us.Romans 8:34. 
-                                read my thoughts about why is interceesing so important.</p> </div>
-                    </a>
-                </article>
-
+                <div class="center-btn hidden">
+                    <a href="blogs.html" class="button outline">View All Posts</a>
                 </div>
-            <a href="blogs.html" class="button">Read All Blog Posts</a>
+            </div>
         </section>
-            
-        <section class="featured-music">
-            <div class="featured-content">
-                <h2>Music Sheets</h2>
-                <p><b>Mostly, I play and figure out chords or somtimes I learn from the internet.</b></p>
-                <a href="music.html" class="button">Explore Music Sheets</a> </div>
-            <div class="featured-image">
-                <img src="Images/Kranthi-Guitar.jpg" alt="Image representing music sheets">
+        
+        <section class="section split-section">
+            <div class="container split-container">
+                <div class="split-image hidden">
+                    <img src="Images/Chicken-Biryani.jpg" alt="Delicious Chicken Biryani">
                 </div>
-        </section>
-
-        <section class="featured-recipe">
-             <div class="featured-image">
-                 <img src="Images/Chicken-Biryani.jpg" alt="Image representing recipes">
+                <div class="split-content hidden delay-100">
+                    <span class="subtitle">From My Kitchen</span>
+                    <h2>Let me cook!</h2>
+                    <p>Cooking is an art form that brings people together. My recipes focus on bold flavors and traditional techniques.</p>
+                    <div class="quote-box">
+                        <p>"Pro Cooking Tip: Always saute vegetables until they're nice and brown, just like me."</p>
+                    </div>
+                    <a href="recipes.html" class="button primary">Try My Recipes</a>
                 </div>
-            <div class="featured-content">
-                <h2>Let me cook!</h2>
-                <p><b>Pro Cooking Tip: Always saute vegetables until they're nice and brown, just like me.</b></p>
-                <a href="recipes.html" class="button">Try My Recipes</a> </div>
+            </div>
         </section>
 
-        <section class="subscribe">
-            <h2>Stay Updated!</h2>
-            <p>Subscribe to get the latest posts, music, and recipes delivered to your inbox.</p>
-            <form> <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
-                <button type="submit" class="button">Subscribe</button>
-            </form>
+        <section class="section subscribe">
+            <div class="container narrow-container hidden">
+                <h2>Join the Community</h2>
+                <p>Get the latest theology posts and secret recipes delivered straight to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email address" aria-label="Email">
+                    <button type="submit" class="button primary">Subscribe</button>
+                </form>
+            </div>
         </section>
-    
-        <section class="quote-section"> <p><b>There is therefore now no condemnation for those who are in Christ Jesus.</b></p>
-             <p><b></b>Romans 8:1</b></p>
+        
+        <section class="quote-section hidden">
+            <div class="container">
+                <blockquote>
+                    "There is therefore now no condemnation for those who are in Christ Jesus."
+                    <cite>— Romans 8:1</cite>
+                </blockquote>
+            </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+                <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
