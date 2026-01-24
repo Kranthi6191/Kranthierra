@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hyderabadi Chiciken Dum Biryani</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/Icon.jpeg" type="Favicon/Jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabadi Chicken Dum Biryani - Kranthi Erra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1>
-        <nav>
-            <ul>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Theology</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="recipe-detail">
-        <h2>Hyderabadi Chicken Dum Biryani</h2>
-        <p class="recipe-meta">
-            Posted by: <span class="author">Kranthi Erra</span> |
-            Date: <span class="date">May 12, 2025</span> |
-            Category: <span class="category">Hyderabadi</span>
-        </p>
-        <div class="image-container">
-            <img src="Images/Chicken-Biryani.jpg" alt="Chicken Biryani">
-        </div>
-        <div class="recipe-ingredients">
-            <h3>Ingredients</h3>
-            <ul>
-                <li>2 yellow onions</li>
-                <li>2lb boneless chicken Thighs</li>
-                <li>4 cups of rice</li>
-                <li>1 tbsp lemon juice</li>
-                <li>1 cup whole milk full fat yogurt</li>
-                <li>2 tsp Ginger-Garlic-Green chili paste</li>
-                <li>1/2 Red chili powder</li>
-                <li>4 tsp Garam Masala</li>
-                <li>3 handfuls of fresh mint and cilantro</li>
-                <li>1/4 cup of mixed whole spices - 2 Bay leaves, carrom seeds, whole cardamom, cinnamon sticks</li>
-                <li>pinch of saffron</li>
-                <li>1/4 cup of Ghee</li>
-                <li>1/4 cup of warm milk</li>
-            </ul>
-        </div>
-        <div class="recipe-instructions">
-            <h3>Instructions</h3>
-            <ol>
-                <li>
-                    In a bowl, combine paprika, lemon juice, lemon zest, onion powder,
-                    ginger powder, garlic powder, Italian herbs, chili flakes, yogurt,
-                    salt, and pepper.
-                </li>
-                <li>
-                    Add the chicken thighs to the marinade and massage until well
-                    coated. Let it rest for at least 30 minutes (or longer for more
-                    flavor).
-                </li>
-                <li>
-                    Heat a pan over medium heat and add a little butter or olive oil.
-                    Cook the marinated chicken thoroughly until it's cooked through and
-                    slightly browned.
-                </li>
-                <li>
-                    Remove the chicken from the pan and let it cool slightly. Then,
-                    slice the chicken into long, thin strips.
-                </li>
-                <li>Warm the pita breads. Spread tzatziki sauce on each pita.</li>
-                <li>
-                    Add the sliced chicken to the pita bread. Top with pickled onions
-                    and sliced tomatoes. Add more tzatziki sauce if desired.
-                </li>
-                <li>Wrap and enjoy immediately.</li>
-            </ol>
-        </div>
+
+    <main>
+        <section class="page-header">
+            <h1>Hyderabadi Chicken Dum Biryani</h1>
+        </section>
+
+        <section class="section">
+            <div class="blog-container">
+                
+                <div class="blog-meta">
+                    <span>By Kranthi Erra</span> • <time>May 12, 2025</time> • <span>Hyderabadi</span>
+                </div>
+
+                <img src="Images/Chicken-Biryani.jpg" alt="Chicken Biryani" style="border-radius: 8px; margin-bottom: 2rem;">
+
+                <div class="blog-content">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 yellow onions</li>
+                        <li>2lb boneless chicken Thighs</li>
+                        <li>4 cups of rice</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>1 cup whole milk full fat yogurt</li>
+                        <li>2 tsp Ginger-Garlic-Green chili paste</li>
+                        <li>1/2 Red chili powder</li>
+                        <li>4 tsp Garam Masala</li>
+                        <li>3 handfuls of fresh mint and cilantro</li>
+                        <li>1/4 cup of mixed whole spices - 2 Bay leaves, carrom seeds, whole cardamom, cinnamon sticks</li>
+                        <li>pinch of saffron</li>
+                        <li>1/4 cup of Ghee</li>
+                        <li>1/4 cup of warm milk</li>
+                    </ul>
+
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>In a bowl, combine paprika, lemon juice, lemon zest, onion powder, ginger powder, garlic powder, Italian herbs, chili flakes, yogurt, salt, and pepper.</li>
+                        <li>Add the chicken thighs to the marinade and massage until well coated. Let it rest for at least 30 minutes (or longer for more flavor).</li>
+                        <li>Heat a pan over medium heat and add a little butter or olive oil. Cook the marinated chicken thoroughly until it's cooked through and slightly browned.</li>
+                        <li>Remove the chicken from the pan and let it cool slightly. Then, slice the chicken into long, thin strips.</li>
+                        <li>Warm the pita breads. Spread tzatziki sauce on each pita.</li>
+                        <li>Add the sliced chicken to the pita bread. Top with pickled onions and sliced tomatoes. Add more tzatziki sauce if desired.</li>
+                        <li>Wrap and enjoy immediately.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Theology</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
