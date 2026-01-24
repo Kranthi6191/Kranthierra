@@ -199,7 +199,7 @@ header {
 }
 
 /* =========================================
-   4. SECTIONS & CARDS
+   4. GENERAL SECTIONS & CARDS
    ========================================= */
 .section { padding: 6rem 0; }
 
@@ -241,7 +241,7 @@ header {
 .read-more { color: var(--primary-color); font-weight: 600; font-size: 0.9rem; }
 .center-btn { text-align: center; }
 
-/* Split Section (Recipe) */
+/* Split Section (Home Page) */
 .split-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,7 +258,7 @@ header {
     color: var(--text-light);
 }
 
-/* Subscribe */
+/* Subscribe Section */
 .subscribe { background-color: #eef2f0; text-align: center; }
 .narrow-container { max-width: 600px; margin: 0 auto; }
 .subscribe form { display: flex; gap: 1rem; margin-top: 2rem; }
@@ -281,69 +281,8 @@ header {
 .quote-section cite { color: var(--accent-color); font-style: normal; font-weight: 600; }
 
 /* =========================================
-   5. FOOTER
+   5. INNER PAGE HEADERS & ABOUT
    ========================================= */
-footer {
-    background-color: #111;
-    color: #aaa;
-    padding: 4rem 0 2rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #333;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-
-.footer-brand h3 { color: white; margin-bottom: 0.5rem; }
-.footer-links a { color: white; margin-left: 2rem; font-size: 0.9rem; }
-.footer-links a:hover { color: var(--accent-color); }
-.footer-bottom { text-align: center; font-size: 0.8rem; }
-
-/* =========================================
-   6. ANIMATIONS
-   ========================================= */
-.hidden { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
-.show { opacity: 1; transform: translateY(0); }
-.delay-100 { transition-delay: 0.1s; }
-.delay-200 { transition-delay: 0.2s; }
-
-/* =========================================
-   7. RESPONSIVE
-   ========================================= */
-@media (max-width: 768px) {
-    .mobile-menu-btn { display: block; z-index: 1001; }
-    
-    .nav-links {
-        position: fixed;
-        top: 0; right: -100%;
-        width: 70%;
-        height: 100vh;
-        background: white;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-        transition: 0.4s ease;
-    }
-    
-    .nav-links.active { right: 0; }
-    .nav-links ul { flex-direction: column; }
-    
-    .hero h1 { font-size: 2.5rem; }
-    .split-container { grid-template-columns: 1fr; }
-    .subscribe form { flex-direction: column; }
-    .footer-content { flex-direction: column; text-align: center; gap: 2rem; }
-    .footer-links { margin: 0; }
-    .footer-links a { margin: 0 10px; }
-}
-/* =========================================
-   ADD THIS TO THE BOTTOM OF style.css
-   ========================================= */
-
-/* Page Headers (Simple Hero for Inner Pages) */
 .page-header {
     background-color: var(--primary-color);
     color: white;
@@ -373,7 +312,9 @@ footer {
 .text-block { margin-bottom: 2.5rem; }
 .text-block h3 { margin-bottom: 1rem; border-bottom: 2px solid var(--accent-color); display: inline-block; padding-bottom: 5px;}
 
-/* Contact Form Responsive Container */
+/* =========================================
+   6. CONTACT PAGE STYLES
+   ========================================= */
 .google-form-container {
     position: relative;
     overflow: hidden;
@@ -387,7 +328,6 @@ footer {
     top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
-/* Social Icons Area */
 .social-links { margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem; }
 .social-icon { 
     width: 50px; height: 50px; 
@@ -399,3 +339,127 @@ footer {
 }
 .social-icon:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
 .social-icon img { width: 24px; height: 24px; }
+
+/* =========================================
+   7. BLOG DETAIL POST STYLES
+   ========================================= */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    margin-top: -3rem; /* Overlap the header slightly */
+    position: relative;
+    z-index: 10;
+}
+
+.blog-meta {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.blog-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.blog-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.blog-content blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #555;
+    margin: 2rem 0;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.blog-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.cta-box {
+    background-color: #f4f8f6;
+    border: 1px solid #d1e2da;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+}
+
+/* =========================================
+   8. FOOTER
+   ========================================= */
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand h3 { color: white; margin-bottom: 0.5rem; }
+.footer-links a { color: white; margin-left: 2rem; font-size: 0.9rem; }
+.footer-links a:hover { color: var(--accent-color); }
+.footer-bottom { text-align: center; font-size: 0.8rem; }
+
+/* =========================================
+   9. ANIMATIONS
+   ========================================= */
+.hidden { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.show { opacity: 1; transform: translateY(0); }
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+
+/* =========================================
+   10. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .mobile-menu-btn { display: block; z-index: 1001; }
+    
+    .nav-links {
+        position: fixed;
+        top: 0; right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: 0.4s ease;
+    }
+    
+    .nav-links.active { right: 0; }
+    .nav-links ul { flex-direction: column; }
+    
+    .hero h1 { font-size: 2.5rem; }
+    .split-container { grid-template-columns: 1fr; }
+    .subscribe form { flex-direction: column; }
+    .footer-content { flex-direction: column; text-align: center; gap: 2rem; }
+    .footer-links { margin: 0; }
+    .footer-links a { margin: 0 10px; }
+    
+    /* Blog Mobile Adjustments */
+    .blog-container { padding: 1.5rem; margin-top: 0; }
+}
