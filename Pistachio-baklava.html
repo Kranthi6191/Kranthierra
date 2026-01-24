@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pistachio Baklava</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/Icon.jpeg" type="Favicon/Jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pistachio Baklava - Kranthi Erra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1>
-        <nav>
-            <ul>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Theology</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="recipe-detail">
-        <h2>Pistachio Baklava</h2>
-        <p class="recipe-meta">
-            Posted by: <span class="author">Kranthi Erra/Laurie Kester</span> |
-            Date: <span class="date">May 13, 2025</span> |
-            Category: <span class="category">Turksih</span>
-        </p>
-        <div class="image-container">
-            <img src="Images/Pistachio-Baklava.jpg" alt="Pistachio Baklava">
-        </div>
-        <div class="recipe-ingredients">
-            <h3>Ingredients</h3>
-            <ul>
-                <li>2 boxes of Phyllo Dough Sheets</li>
-                <li>Salted Pistachio Blended - 2 cups</li>
-                <li>16oz Ghee</li>
-                <li>16oz Butter</li>
-                <li>8oz maple syrup</li>
-            </ul>
-        </div>
-        <div class="recipe-instructions">
-            <h3>Prep</h3>
-            <ol>
-                <li>
-                    In a bowl, add melted butter and ghee together.
-                </li>
-                <li>
-                    In another bowl, keep the blended pistachios.
-                </li>
-            </ol>
-             <h3>Instructions</h3>
-            <ol>
-                <li>
-                  Add a layer of butter and ghee mix to a pan. Add two layers of dough sheet and apply the butter ghee mix and repeat the process 5 times.
-                  Now add a cup of pisachios to these 10 layers of sheet. Add two more layers of dough sheet and apply butter ghee mix and repeat the process 5 times.
-                  Now add another cup of pisachios to these 10 layers of sheet. Add two more layers of dough sheet and apply butter ghee mix and repeat the process 5 times.
-                </li>
-                <li>
-                  After this process, starting cutting Bakalava into your preferred size pieces and bake at 370 for 18 mins. Once you see the top layer cooked nice and brown just like me, 
-                    take the pan out and let it cool down a little and add syrup to this baked baklava.
-                </li>
-                <li>Top off with pistachios if you'd like and enjoy.</li>
-            </ol>
-        </div>
+
+    <main>
+        <section class="page-header">
+            <h1>Pistachio Baklava</h1>
+        </section>
+
+        <section class="section">
+            <div class="blog-container">
+                
+                <div class="blog-meta">
+                    <span>By Kranthi Erra/Laurie Kester</span> • <time>May 13, 2025</time> • <span>Turkish</span>
+                </div>
+
+                <img src="Images/Pistachio-Baklava.jpg" alt="Pistachio Baklava" style="border-radius: 8px; margin-bottom: 2rem;">
+
+                <div class="blog-content">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 boxes of Phyllo Dough Sheets</li>
+                        <li>Salted Pistachio Blended - 2 cups</li>
+                        <li>16oz Ghee</li>
+                        <li>16oz Butter</li>
+                        <li>8oz maple syrup</li>
+                    </ul>
+
+                    <h3>Prep</h3>
+                    <ol>
+                        <li>In a bowl, add melted butter and ghee together.</li>
+                        <li>In another bowl, keep the blended pistachios.</li>
+                    </ol>
+
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Add a layer of butter and ghee mix to a pan. Add two layers of dough sheet and apply the butter ghee mix and repeat the process 5 times. Now add a cup of pisachios to these 10 layers of sheet. Add two more layers of dough sheet and apply butter ghee mix and repeat the process 5 times. Now add another cup of pisachios to these 10 layers of sheet. Add two more layers of dough sheet and apply butter ghee mix and repeat the process 5 times.</li>
+                        <li>After this process, starting cutting Bakalava into your preferred size pieces and bake at 370 for 18 mins. Once you see the top layer cooked nice and brown just like me, take the pan out and let it cool down a little and add syrup to this baked baklava.</li>
+                        <li>Top off with pistachios if you'd like and enjoy.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Kranthi Erra All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Theology</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
