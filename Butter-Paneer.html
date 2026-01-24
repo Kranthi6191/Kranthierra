@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Butter Paneer Masala</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/Icon.jpeg" type="Favicon/Jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butter Paneer Masala - Kranthi Erra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1>
-        <nav>
-            <ul>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Theology</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="recipe-detail">
-        <h2>Butter Paneer Masala</h2>
-        <p class="recipe-meta">
-            Posted by: <span class="author">Kranthi Erra</span> |
-            Date: <span class="date">May 1, 2025</span> |
-            Category: <span class="category">Indian/Curries</span>
-        </p>
-        <div class="image-container">
-            <img src="Images/Butter-Paneer.jpg" alt="Butter Paneer">
-        </div>
-        <div class="recipe-ingredients">
-            <h3>Ingredients</h3>
-            <ul>
-                <li>2 Paneer cubed - 1lb</li>
-                <li>4 Roma Toamtoes</li>
-                <li>2 Yellow Onions</li>
-                <li>Handful Cashew Nuts(broken or full)</li>
-                <li>2 Whole Cardamom</li>
-                <li>1 inch Cinnamon stick</li>
-                <li>1/2 tsp Ginger Paste</li>
-                <li>1 tsp Garlic Paste</li>
-                <li>2 tsp Garam Masala</li>
-                <li>1/2 Stick Salted Butter</li>
-                <li>1 tsp Red Chili Powder</li>
-                <li>2 tsp Salt </li>
-                <li>Chopped Handful of Cilantro</li>
-            </ul>
-        </div>
-        <div class="recipe-instructions">
-            <h3>Instructions</h3>
-            <ol>
-                <li>
-                    In a pan, add roughly chopped tomatoes, roughly chopped onions, cashew nuts,
-                    ginger paste, garlic paste, Cardamom, Cinnamon and cook till they're soft and wait until they're cooled down or little less hot.
-                </li>
-                <li>
-                    Now, the cooked onion and tomatoes should be blend into a nice and creamy paste. Keep the paste ready, take a pan and add butter, let it melt.
-                    Add this paste to the melted butter and now add salt, chili powder and garam masala to this paste and cook for about 5 mins with lid.
-                </li>
-                <li>
-                    Meanwhile it's cooking, dice paneer into cubes and once the paste is cooked for 5 mins
-                    add the cubed paneer and cook for a couple of mins and add chopped cilantro on top and you're done.
-                </li>
-                <li>
-                    Add some fresh cream on if you like decorating your plate.
-                </li>
-                <li>Enjoy with Naan or Rice or Both.</li>
-            </ol>
-        </div>
+
+    <main>
+        <section class="page-header">
+            <h1>Butter Paneer Masala</h1>
+        </section>
+
+        <section class="section">
+            <div class="blog-container">
+                
+                <div class="blog-meta">
+                    <span>By Kranthi Erra</span> • <time>May 1, 2025</time> • <span>Indian/Curries</span>
+                </div>
+
+                <img src="Images/Butter-Paneer.jpg" alt="Butter Paneer" style="border-radius: 8px; margin-bottom: 2rem;">
+
+                <div class="blog-content">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 Paneer cubed - 1lb</li>
+                        <li>4 Roma Toamtoes</li>
+                        <li>2 Yellow Onions</li>
+                        <li>Handful Cashew Nuts(broken or full)</li>
+                        <li>2 Whole Cardamom</li>
+                        <li>1 inch Cinnamon stick</li>
+                        <li>1/2 tsp Ginger Paste</li>
+                        <li>1 tsp Garlic Paste</li>
+                        <li>2 tsp Garam Masala</li>
+                        <li>1/2 Stick Salted Butter</li>
+                        <li>1 tsp Red Chili Powder</li>
+                        <li>2 tsp Salt </li>
+                        <li>Chopped Handful of Cilantro</li>
+                    </ul>
+
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>In a pan, add roughly chopped tomatoes, roughly chopped onions, cashew nuts, ginger paste, garlic paste, Cardamom, Cinnamon and cook till they're soft and wait until they're cooled down or little less hot.</li>
+                        <li>Now, the cooked onion and tomatoes should be blend into a nice and creamy paste. Keep the paste ready, take a pan and add butter, let it melt. Add this paste to the melted butter and now add salt, chili powder and garam masala to this paste and cook for about 5 mins with lid.</li>
+                        <li>Meanwhile it's cooking, dice paneer into cubes and once the paste is cooked for 5 mins add the cubed paneer and cook for a couple of mins and add chopped cilantro on top and you're done.</li>
+                        <li>Add some fresh cream on if you like decorating your plate.</li>
+                        <li>Enjoy with Naan or Rice or Both.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Kranthi Erra. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Theology</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
