@@ -1,116 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformation on the Inside and Outside Is a Choice - Kranthi Erra</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Scope everything to .blog-page so other pages aren't affected */
-        .blog-page main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; box-sizing: border-box; }
-
-        .blog-page .blog-post-detail {
-            max-width: 820px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-            overflow: hidden;
-        }
-
-        /* Make images responsive and contained */
-        .blog-page img { max-width: 100%; height: auto; display: block; }
-
-        /* Defensive: neutralize floats only on this page */
-        .blog-page .blog-post-detail * { float: none !important; clear: none !important; }
-
-        /* Heading / text tweaks for readability */
-        .blog-page .post-meta { color: #666; font-size: 0.95rem; margin-bottom: 1.25rem; }
-
-        /* --- REDUCED SPACING FOR PROFESSIONAL LOOK --- */
-        .blog-page .blog-post-content p { 
-            line-height: 1.5;         /* Reduced line-height (was 1.7) */
-            margin-bottom: 0.8rem;    /* Reduced space between paragraphs (was 1rem) */
-            color: #222; 
-        }
-
-        .blog-page .blog-post-content h3 { color: #014421; margin-top: 1.5rem; margin-bottom: 0.75rem; }
-        
-        /* Blockquote Styling: Added a style to make blockquotes visually distinct */
-        .blog-page .blog-post-content blockquote {
-            font-style: italic;
-            border-left: 5px solid #ccc; /* Subtle color */
-            padding: 10px 20px;
-            margin: 1.5rem 0;
-            background-color: #fcfcfc; /* Light background for contrast */
-        }
-        .blog-page .blog-post-content blockquote p {
-            margin: 0; /* Remove paragraph margins inside blockquote */
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        /* --- END REDUCED SPACING --- */
-
-        /* Call-to-action styling (Matching your previous code) */
-        .blog-page .cta { margin-top: 1.5rem; padding: 1rem; background: #f7fbf7; border-left: 4px solid #014421; border-radius: 6px; }
-        .blog-page .cta h4 { margin: 0 0 0.5rem 0; color: #014421; font-size: 1.15rem;} /* Added style for the Call to Action header */
-        .blog-page .cta p { margin: 0.4rem 0; line-height: 1.4; } /* Tighter spacing inside CTA */
-
-        /* If main was hidden via global CSS, ensure loaded class shows it */
-        .blog-page main.loaded { opacity: 1 !important; transition: opacity 0.35s ease-in; }
-
-        @media (max-width:720px) {
-            .blog-page .blog-post-detail { padding: 1.25rem; margin: 1rem; }
-            .blog-page nav ul { justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
-        }
-    </style>
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
 
     <meta property="og:title" content="Transformation on the Inside and Outside Is a Choice" />
     <meta property="og:description" content="Explore how transformation is a daily choice, starting with the renewal of the mind (Romans 12:2), and leading to a life that reflects Christ." />
     <meta property="og:image" content="https://kranthi6191.github.io/Kranthierra/Images/transformation.png" />
-    <meta property="og:url" content="https://kranthi6191.github.io/Kranthierra/Transformation-as-a-choice.html" />
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Kranthi Erra" />
-    <meta property="article:author" content="Kranthi Erra" />
-    <meta property="fb:app_id" content="689184010387625" />
 </head>
+<body>
 
-<body class="blog-page">
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blogs.html" class="active">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html" class="active">Theology</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="blog-post-detail">
-            <article>
-                <h2>Transformation on the Inside and Outside Is a Choice</h2>
+        <section class="page-header">
+            <h1>Transformation on the Inside and Outside Is a Choice</h1>
+        </section>
 
-                <p class="post-meta">
-                    <strong>Kranthi Erra</strong> • <time datetime="2025-10-02">October 2, 2025</time>
-                </p>
-
-                <div class="image-container" style="margin-bottom: 2rem;">
-                    <img src="Images/transformation.png" alt="A butterfly emerging from a chrysalis symbolizing metamorphosis and transformation.">
+        <section class="section">
+            <div class="blog-container hidden">
+                
+                <div class="blog-meta">
+                    <span>By Kranthi Erra</span> • <time datetime="2025-10-02">October 2, 2025</time>
                 </div>
 
-                <div class="blog-post-content">
-                    
+                <img src="Images/transformation.png" alt="Butterfly Transformation" style="border-radius: 8px; margin-bottom: 2rem;">
+
+                <div class="blog-content">
                     <h3>The World’s Obsession with Transformation</h3>
                     <p>A couple of weeks ago, two major world leaders, Xi Jinping and Vladimir Putin were recently overheard in China talking about being immortal and living up to 150 years through organ transplants and cutting-edge technology, unaware that there were hot mics nearby. They were brainstorming about transforming their bodies to achieve immortality.</p>
+                    
                     <p>Have you ever had thoughts like that? I remember thinking about similar ideas during my Transhumanism class in graduate school at Oswego State, where we discussed the concept of living forever in a virtual world, transferring all our data, memories, and consciousness into some kind of digital cloud where our minds would continue to exist. It’s a fascinating yet crazy thought.</p>
+                    
                     <p>But we all have to realize that all of this is temporary, our technology, our physical bodies, even the ambitions of world leaders trying to make themselves immortal. The real question is: Have you thought about living forever spiritually?</p>
 
                     <blockquote>
@@ -121,18 +62,19 @@
                     
                     <blockquote>
                         <i><b>“Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God — what is good and acceptable and perfect.”</b></i>
-                        <p>— Romans 12:2</p>
+                        <br>— Romans 12:2
                     </blockquote>
                     
                     <p>It’s easy to break down this verse: do not follow the ways of the world, but be transformed by changing your mind by learning to understand the will of God and His will is good, acceptable, and perfect. We often grasp the first part easily, but I want to take a moment to talk about the <b>renewal of mind</b> and the choices we make.</p>
 
                     <h3>Be Transformed — Inside</h3>
                     <p>The first step toward transformation is being transformed on the inside, in the mind. This internal transformation cannot happen if we conform to the world.</p>
+                    
                     <p>The mind is a fascinating thing. It often jumps around like a monkey—wanting one thing in the moment, something else twenty minutes later, and something completely different tomorrow. This happens to everyone, young and old, when we’re figuring things out, making decisions, and we are easily impressionable. We try to copy others, follow trends, and in the process, somehow knowingly or unknowingly, we begin to conform to the world but that’s not what God wants, that is not good and acceptable and perfect.</p>
                     
                     <blockquote>
                         <i><b>“As obedient children, do not be conformed to the passions of your former ignorance, but as He who called you is holy, you also be holy in all your conduct, since it is written, ‘You shall be holy, for I am holy.’”</b></i>
-                        <p>— 1 Peter 1:14–16</p>
+                        <br>— 1 Peter 1:14–16
                     </blockquote>
                     
                     <p>We are called to obedience. Just as children obey their parents because they understand what’s not good for them, we are to obey our Heavenly Father, to live holy, walk holy, and be holy, because He is holy. And all those “rules” we think are bad, they’re actually not.</p>
@@ -161,7 +103,7 @@
 
                     <blockquote>
                         <i><b>“For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit. For to set the mind on the flesh is death, but to set the mind on the Spirit is life and peace. For the mind that is set on the flesh is hostile to God, for it does not submit to God’s law; indeed, it cannot.”</b></i>
-                        <p>— Romans 8:5–7 (ESV)</p>
+                        <br>— Romans 8:5–7 (ESV)
                     </blockquote>
                     
                     <p>We must leave behind the things of the flesh and live a good and holy life. Renewing our minds means adopting a new way of thinking, a mind that desires to be conformed to God rather than to the world. We will never be truly transformed without this <b>renewal of the mind</b>.</p>
@@ -170,6 +112,7 @@
 
                     <h3>Be Transformed — Outside</h3>
                     <p>The Christian walk is different, it doesn’t end with what happens on the inside. Sure, if I confess that Christ is Lord and repent of my sins, I receive eternal life. But if I do those two things in the morning, and then go online later that afternoon and rage-bait someone in the TikTok comments, am I really living a transformed life? That’s something worth thinking about.</p>
+                    
                     <p>When we are truly transformed on the inside, it shows. People can see it. We don't carry around the same habits, the same attitude, or the same reactions. We check ourselves, we course-correct, and we let our words and actions reflect who we now belong to, like a light set on a city hill, shining bright, where people can tell it’s not an ordinary light. It’s special, placed high for a reason.</p>
 
                     <blockquote>
@@ -181,7 +124,7 @@
                     
                     <blockquote>
                         <i><b>“To put off your old self, which belongs to your former manner of life and is corrupt through deceitful desires, and to be renewed in the spirit of your minds, and to put on the new self, created after the likeness of God in true righteousness and holiness.”</b></i>
-                        <p>— Ephesians 4:22–24</p>
+                        <br>— Ephesians 4:22–24
                     </blockquote>
                     
                     <p>This is where transformation gets practical. Paul goes on to say in later verses:</p>
@@ -194,28 +137,32 @@
 
                     <h3>True Character Is Seen When No One Is Watching</h3>
                     <p>The real transformation isn’t just what you say you believe—it’s how you live, even when no one’s watching, giving in secret, praying in secret and that’s where the test really begins. Because it’s easy to act holy in front of others, in church, on social media, or in Bible study. But when you’re alone, that’s when the <b>character is revealed</b>.</p>
+                    
                     <p>If you think, “No one is watching me, I can take this,” or “No one will know it’s me if I say evil things, it is just a fake account,” that’s not transformation. If you say, “No one’s around, I can look at what I want,” or “It’s just a comment—I’m only rage-baiting for fun,” that’s not the life of someone renewed in Christ.</p>
+                    
                     <p>My dear friends, the real transformation doesn’t fade in darkness. <b>True transformation is consistent, both inside and out.</b> People will recognize that you are a follower of Christ not just by what you post, but by how you act, how you speak, and how you love.</p>
                     
                     <blockquote>
                         <i><b>“By this everyone will know that you are my disciples, if you love one another.”</b></i>
-                        <p>— John 13:35</p>
+                        <br>— John 13:35
                     </blockquote>
                     
                     <p>The external transformation doesn’t happen when we conform to the world, it happens when we let Christ reshape us daily, from the inside out.</p>
 
                     <h3>Transformation Is a Choice</h3>
-                    
                     <p>I’ve heard people argue that God didn’t give us free will, that everything’s already written, already decided. I remember one of my professors at SUNY Oswego asking our class, ‘Who believes in free will?’ Out of twenty students, it was just me and one friend who raised our hands.</p>
+                    
                     <p>A lot of people think destiny is fixed, that we’re just programmed to live a certain way. But God didn’t make us like machines. He didn’t code us to give perfect responses every single time. He made us in His image, with a spirit that can think, choose, and respond. Paul says in Romans 8 that our spirit has a mind and that means we have a <b>choice</b>, both in our bodies and our spirits. God won’t force transformation on you. He invites you into it. Every time you say yes, every time you surrender, every time you trust Him in the process, He shapes you a little more into His image.</p>
                     
                     <blockquote>
                         <i><b>“Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life. And let us not grow weary of doing good, for in due season we will reap, if we do not give up.”</b></i>
-                        <p>— Galatians 6:7–9</p>
+                        <br>— Galatians 6:7–9
                     </blockquote>
                     
                     <p>So the question is simple: Do you want to stay the same, or do you want to be transformed? Because coal can stay comfortable—but <b>diamonds are made under pressure</b>.</p>
+                    
                     <p>There is so much power in transformed minds and transformed bodies. After His resurrection, Jesus appeared to His disciples and many others over the following weeks. Seeing the risen and transformed Jesus changed everything. The same disciples who denied Him, who doubted Him, were now willing to give their lives for Him and for the truth. Paul even said, ‘If Christ has not been raised, your faith is futile’—showing that the <b>resurrection proves the ultimate power of transformation</b>. When we are transformed, we too can lead others to Christ, just like the apostles did. Transformation empowers us to point others to His Kingdom, here on Earth and ultimately in Heaven.</p>
+                    
                     <p>That is our goal as believers—to spend eternity with Jesus. And it all starts in the mind, by making a <b>conscious choice</b> every day to pick up the cross and follow Him:</p>
                     
                     <ul>
@@ -231,7 +178,7 @@
                         “And when that day comes — transformation won’t be a process anymore. It will be complete.”
                     </blockquote>
 
-                    <div class="cta">
+                    <div class="cta-box">
                         <h4>Call to Action</h4>
                         <p>The mind needs to be transformed.</p>
                         <p>The actions need to be transformed.</p>
@@ -240,37 +187,28 @@
                         <p>or in other words, on earth as it is in heaven.</p>
                     </div>
                 </div>
-            </article>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+                <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Theology</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script>
-        (function () {
-            if (!document.body.classList.contains('blog-page')) return;
-
-            // Reveal main if hidden by global CSS
-            const main = document.querySelector('main');
-            if (main && !main.classList.contains('loaded')) {
-                setTimeout(() => main.classList.add('loaded'), 45);
-            }
-
-            // Update copyright year
-            const yearSpan = document.getElementById('currentYear');
-            if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-
-            // Defensive inline style cleanup (only on this page)
-            const blog = document.querySelector('.blog-post-detail');
-            if (blog) {
-                blog.querySelectorAll('*').forEach(el => {
-                    el.style.float = 'none';
-                    el.style.clear = 'none';
-                });
-            }
-        })();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
