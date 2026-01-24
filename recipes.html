@@ -1,80 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kranthi Erra - Recipes</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/Icon.jpeg" type="Favicon/Jpeg"> </head>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
+</head>
 <body>
-    <header>
-        <h1><a href="index.html">Kranthi Erra</a></h1> <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="music.html">Music Sheets</a></li>
-                <li><a href="recipes.html" class="active">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Theology</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="recipe-list-section">
-            <h2>Our Delicious Recipes</h2>
-            <div class="recipe-grid-container">
-                <article class="recipe-card">
-                    <a href="chicken-gyro.html">
-                        <div class="recipe-image-wrapper">
-                            <img src="Images/Chicken-Gyro.jpg" alt="Chicken Gyro">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Chicken Gyro</h3>
-                            <p class="recipe-excerpt">Savory spiced chicken in pita.</p>
-                        </div>
-                    </a>
-                </article>
+        <section class="page-header">
+            <h1>Culinary Creations</h1>
+            <p>Simple, soulful dishes that connect me to my roots and bring people together.</p>
+        </section>
 
-                <article class="recipe-card">
-                    <a href="Hyderabadi-biryani.html"> <div class="recipe-image-wrapper">
-                            <img src="Images/Chicken-Biryani.jpg" alt="Hyderabadi Chicken Dum Biryani">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Hyderabadi Chicken Dum Biryani</h3>
-                            <p class="recipe-excerpt">Aromatic rice steam cooked with marinated chicken.</p>
-                        </div>
-                    </a>
-                </article>
+        <section class="section">
+            <div class="container">
+                <div class="post-grid">
+                    
+                    <article class="post-card hidden">
+                        <a href="chicken-gyro.html">
+                            <div class="card-image">
+                                <img src="Images/Chicken-Gyro.jpg" alt="Chicken Gyro">
+                            </div>
+                            <div class="card-content">
+                                <span class="category">Main Course</span>
+                                <h3>Chicken Gyro</h3>
+                                <p>Savory spiced chicken wrapped in soft pita. A classic street food favorite made at home.</p>
+                                <span class="read-more">View Recipe &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="recipe-card">
-                    <a href="Pistachio-baklava.html"> <div class="recipe-image-wrapper">
-                            <img src="Images/Pistachio-Baklava.jpg" alt="Pistachio Baklava">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Pistachio Baklava</h3>
-                            <p class="recipe-excerpt">Phyllo dough with pistachios and Maple syrup.</p>
-                        </div>
-                    </a>
-                </article>
+                    <article class="post-card hidden delay-100">
+                        <a href="Hyderabadi-biryani.html">
+                            <div class="card-image">
+                                <img src="Images/Chicken-Biryani.jpg" alt="Hyderabadi Chicken Dum Biryani">
+                            </div>
+                            <div class="card-content">
+                                <span class="category">Signature Dish</span>
+                                <h3>Hyderabadi Chicken Dum Biryani</h3>
+                                <p>Aromatic basmati rice steam-cooked with marinated chicken and bold spices.</p>
+                                <span class="read-more">View Recipe &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="recipe-card">
-                    <a href="Butter-Paneer.html"> <div class="recipe-image-wrapper">
-                            <img src="Images/Butter-Paneer.jpg" alt="Butter Paneer">
-                        </div>
-                        <div class="recipe-card-content">
-                            <h3>Butter Paneer</h3>
-                            <p class="recipe-excerpt">Delicious Paneer in creamy tomato, onion, cashews and spiced gravy.</p>
-                        </div>
-                    </a>
-                </article>
+                    <article class="post-card hidden">
+                        <a href="Pistachio-baklava.html">
+                            <div class="card-image">
+                                <img src="Images/Pistachio-Baklava.jpg" alt="Pistachio Baklava">
+                            </div>
+                            <div class="card-content">
+                                <span class="category">Dessert</span>
+                                <h3>Pistachio Baklava</h3>
+                                <p>Layers of flaky phyllo dough filled with crushed pistachios and soaked in sweet maple syrup.</p>
+                                <span class="read-more">View Recipe &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post-card hidden delay-100">
+                        <a href="Butter-Paneer.html">
+                            <div class="card-image">
+                                <img src="Images/Butter-Paneer.jpg" alt="Butter Paneer">
+                            </div>
+                            <div class="card-content">
+                                <span class="category">Vegetarian</span>
+                                <h3>Butter Paneer</h3>
+                                <p>Delicious Paneer cubes simmered in a creamy tomato, onion, and cashew gravy.</p>
+                                <span class="read-more">View Recipe &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
                 </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="currentYear">2025</span> Kranthi Erra. All rights reserved.</p> </footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Kranthi Erra</h3>
+                <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Theology</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Kranthi Erra. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
