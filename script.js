@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Update Copyright Year
+    // 1. Update Copyright Year automatically
     const yearSpan = document.getElementById('currentYear');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // 2. Mobile Menu Logic
+    // 2. Mobile Menu Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             
-            // Hamburger Animation
+            // Animate hamburger lines
             const spans = mobileBtn.querySelectorAll('span');
             if (navLinks.classList.contains('active')) {
                 spans[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
@@ -26,10 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 spans[2].style.transform = 'none';
             }
         });
+        
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const spans = mobileBtn.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
     }
 
     // 3. SAFE ANIMATIONS
-    // We check if the browser supports 'IntersectionObserver'
+    // Only runs if browser supports it. 
+    // Does NOT hide content by default (content is visible in CSS).
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -44,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const elementsToAnimate = document.querySelectorAll('.post-card, .blog-container, .split-image, .split-content, .verse-highlight');
         
         elementsToAnimate.forEach(el => {
-            el.classList.add('animate-on-scroll'); // Only add hidden class if JS works!
-            observer.observe(el);
+            el.classList.add('animate-on-scroll'); // Add class that sets opacity to 0
+            observer.observe(el); // Start watching
         });
     }
 });
