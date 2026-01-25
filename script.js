@@ -40,8 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. SAFE ANIMATIONS
-    // Only runs if browser supports it. 
-    // Does NOT hide content by default (content is visible in CSS).
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -52,12 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }, { threshold: 0.1 });
 
-        // Select elements to animate
-        const elementsToAnimate = document.querySelectorAll('.post-card, .blog-container, .split-image, .split-content, .verse-highlight');
+        // UPDATED LIST: Now includes .editorial-image, .editorial-text, and .detail-block
+        const elementsToAnimate = document.querySelectorAll(
+            '.post-card, .blog-container, .split-image, .split-content, .verse-highlight, .editorial-image, .editorial-text, .detail-block'
+        );
         
         elementsToAnimate.forEach(el => {
-            el.classList.add('animate-on-scroll'); // Add class that sets opacity to 0
-            observer.observe(el); // Start watching
+            el.classList.add('animate-on-scroll');
+            observer.observe(el);
         });
     }
 });
