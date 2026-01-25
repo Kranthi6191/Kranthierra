@@ -340,3 +340,101 @@ footer {
     .verse-highlight { padding: 2rem 1rem; }
     .verse-highlight blockquote { font-size: 1.2rem; }
 }
+/* =========================================
+   10. NEW ABOUT PAGE (The Editorial Look)
+   ========================================= */
+
+/* The Split Hero Section */
+.editorial-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% Image, 50% Text */
+    min-height: 85vh; /* Takes up most of the screen */
+    align-items: center;
+    background-color: #f4f4f4; /* Subtle contrast background */
+}
+
+/* The Image Side */
+.editorial-image {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.editorial-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Optional: Makes image black & white for that "Pro" look */
+    filter: grayscale(100%); 
+    transition: filter 0.5s ease;
+}
+
+.editorial-image:hover img {
+    filter: grayscale(0%); /* Color returns on hover */
+}
+
+/* The Text Side */
+.editorial-text {
+    padding: 4rem 5rem;
+    max-width: 650px;
+}
+
+.editorial-text h1 {
+    font-size: 3.5rem; /* Big, bold headline */
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.editorial-text p.lead {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.signature {
+    margin-top: 3rem;
+    font-family: 'Playfair Display', serif; /* Handwritten feel */
+    font-size: 2rem;
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+/* The Content Columns (Passions & Facts) */
+.editorial-details {
+    padding: 6rem 0;
+    background: white;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3rds Text, 1/3rd Facts */
+    gap: 4rem;
+}
+
+.detail-block h3 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.fact-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.fact-list strong { color: var(--primary-color); }
+
+/* Responsive Mobile */
+@media (max-width: 900px) {
+    .editorial-hero { grid-template-columns: 1fr; min-height: auto; }
+    .editorial-image { height: 500px; }
+    .editorial-text { padding: 3rem 1.5rem; }
+    .editorial-text h1 { font-size: 2.5rem; }
+    .details-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
