@@ -169,10 +169,11 @@ header {
 .section-header h2 { font-size: 2.2rem; margin-bottom: 0.5rem; }
 .section-header p { color: var(--text-light); font-size: 1rem; max-width: 500px; margin: 0 auto; }
 
-/* Grid */
+/* Grid Layout Fix */
 .post-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 'auto-fill' keeps the cards standard size even if you have fewer posts */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 2rem;
 }
 
