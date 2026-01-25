@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kranthi Erra - Contact Me</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Contact - Kranthi Erra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/Icon.jpeg" type="image/jpeg">
 </head>
@@ -15,14 +12,14 @@
     <header id="navbar">
         <div class="container nav-container">
             <h1 class="logo"><a href="index.html">Kranthi Erra</a></h1>
-            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
             <nav class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blogs.html">Theology</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,20 +32,22 @@
         </section>
 
         <section class="section">
-            <div class="container narrow-container">
+            <div class="blog-container" style="max-width: 700px;">
                 
-                <div class="google-form-container hidden">
+                <div class="google-form-container animate-on-scroll">
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOWqi7XG-Msni1gAbOj5vysw_YbVKvn0RZAsTcPALf2a6I5w/viewform?embedded=true">Loading…</iframe>
                 </div>
 
-                <div class="section-header hidden delay-100" style="margin-top: 4rem;">
-                    <h2>Connect Elsewhere</h2>
+                <div class="cta-box animate-on-scroll" style="margin-top: 3rem; text-align: center;">
+                    <h3>Connect Elsewhere</h3>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Follow the journey on social media.</p>
+                    
                     <div class="social-links">
                         <a href="https://www.youtube.com/@Kranthi019" class="social-icon" aria-label="Youtube" target="_blank">
-                            <img src="Images/Youtube-Icon.jpg" alt="Youtube">
+                            <img src="Images/Youtube-Icon.jpg" alt="Youtube" style="width: 24px; height: 24px; object-fit: contain;">
                         </a>
                         <a href="https://www.linkedin.com/in/kranthi-kumar-erra/" class="social-icon" aria-label="LinkedIn" target="_blank">
-                            <img src="Images/Linkedin-Icon.jpg" alt="LinkedIn">
+                            <img src="Images/Linkedin-Icon.jpg" alt="LinkedIn" style="width: 24px; height: 24px; object-fit: contain;">
                         </a>
                     </div>
                 </div>
@@ -61,7 +60,6 @@
         <div class="container footer-content">
             <div class="footer-brand">
                 <h3>Kranthi Erra</h3>
-                <p>Exploring faith, sharing melodies, and savoring delicious recipes.</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">Home</a>
