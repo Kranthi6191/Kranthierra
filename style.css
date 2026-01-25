@@ -364,10 +364,11 @@ footer {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* Optional: Makes image black & white for that "Pro" look */
-    filter: grayscale(100%); 
-    transition: filter 0.5s ease;
+    /* I removed the grayscale filter below so it is always color */
+    filter: none; 
 }
+
+/* You can also delete the hover rule since you don't need it anymore */
 
 .editorial-image:hover img {
     filter: grayscale(0%); /* Color returns on hover */
