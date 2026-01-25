@@ -264,6 +264,18 @@ header {
     opacity: 1 !important; /* Force visible */
 }
 
+/* --- NEW CODE: MAKES THE IMAGES SMALLER & CENTERED --- */
+.blog-container > img {
+    max-width: 85%;       /* Limits width so it doesn't touch edges */
+    max-height: 450px;    /* Limits height */
+    object-fit: cover;    /* Keeps image looking good */
+    margin: 0 auto 2rem;  /* Centers the image */
+    display: block;       
+    box-shadow: var(--shadow-subtle);
+    border-radius: 4px;
+}
+/* ---------------------------------------------------- */
+
 .blog-meta { text-align: center; color: var(--text-light); font-size: 0.85rem; margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
 .blog-content p { margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.8; }
 .blog-content h3 { margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-color); }
@@ -271,7 +283,7 @@ header {
 .blog-content ul, .blog-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
 .cta-box { background-color: #f4f8f6; border: 1px solid #d1e2da; padding: 2rem; border-radius: 8px; margin-top: 3rem; }
 
-/* About & Contact */
+/* About & Contact Styles */
 .about-image { text-align: center; margin: -3rem auto 3rem; position: relative; z-index: 10; }
 .about-image img { width: 250px; height: 250px; border-radius: 50%; border: 5px solid white; box-shadow: var(--shadow-hover); object-fit: cover; display: inline-block; }
 .google-form-container { position: relative; overflow: hidden; padding-top: 100%; border-radius: 4px; background: white; }
